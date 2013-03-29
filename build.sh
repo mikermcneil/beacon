@@ -4,4 +4,4 @@
 
 #npm update
 jam upgrade
-jam compile public/jam/require.js
+jam compile public/lib/require.js
