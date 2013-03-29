@@ -16,6 +16,7 @@ Todos:
 - finish view snippets, inspired by punch-thirdparty-snippets-helper
 -- how to do global snippets?
 -- how to pass variables into snippets?
+-- make google fonts working, and supporting array
 - connect Knockout.js mapping plugin to the Sails websocket
 - HTML minification?
 - markdown view parser?
