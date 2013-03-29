@@ -13,7 +13,9 @@ Todos:
 
 - get require.js working with knockout (or bypass it)
 - integrate require.js compiling into process
-- view helpers/snippets, inspired by punch-thirdparty-snippets-helper
+- finish view snippets, inspired by punch-thirdparty-snippets-helper
+-- how to do global snippets?
+-- how to pass variables into snippets?
 - connect Knockout.js mapping plugin to the Sails websocket
 - HTML minification?
 - markdown view parser?
