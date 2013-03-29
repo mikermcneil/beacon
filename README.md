@@ -8,13 +8,14 @@ This is a fresh Sails install, with a few extras:
 - some useful packages are added in package.json, including the Jam.js frontend dependency manager
 - Jam and Require.js integrated into the site layout header
 - Conditionizr.js added
+- reusable layout elements modularized into /snippets folder
 
 Todos:
 
 - get require.js working with knockout (or bypass it)
 - integrate require.js compiling into process
 - finish view snippets, inspired by punch-thirdparty-snippets-helper
--- how to do global snippets?
+-- how to call snippets from any template?
 -- how to pass variables into snippets?
 -- make google fonts working, and supporting array
 - connect Knockout.js mapping plugin to the Sails websocket
