@@ -11,7 +11,8 @@ Todos:
 
 - view helpers, based on the punch-thirdparty-snippets-helper
 - connect Knockout.js mapping plugin to the Sails websocket
-- HTML minification
-- markdown view parser
+- HTML minification?
+- markdown view parser?
 - frontend boilerplate code
+- optional js assets in footer?
 
