@@ -1,0 +1,31 @@
+{
+    "name": "sailsplus",
+    "private": true,
+    "version": "0.0.0",
+    "description": "a Sails application boilerplate",
+    "dependencies": {
+        "sails": "0.8.894",
+        "jam": null,
+		"moment": null        
+    },
+	"jam": {
+		"dependencies": {
+			  "jquery": null,
+			  "modernizr": null,
+			  "postal": null,
+			  "moment": null,
+			  "hammer": null,
+			  "knockout": null,
+			  "knockout.mapping": null,
+			  "ko.extenders.store": null
+		}
+	},   
+    "scripts": {
+        "start": "node .app.js",
+        "debug": "node debug .app.js"
+    },
+    "main": ".app.js",
+    "repository": "",
+    "author": "",
+    "license": "MIT"
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%- title %></title>
+
+		<!-- Viewport mobile tag for sensible mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<%- assets.css() %>
+
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/conditionizr.js/2.2.0/conditionizr.min.js"></script>
+		
+		<script src="jam/require.js"></script>
+		
+		<script>
+		  require(['jquery'], function ($) {
+		    $(document.body).text('Hello, world!');
+		  });
+		</script>
+		
+		<%- assets.js() %>
+	</head>
+
+	<body>
+		<%- body %>
+
+		<!-- Templates from your view path are included here -->
+		<%- assets.templateLibrary() %>
+	</body>
+</html>
