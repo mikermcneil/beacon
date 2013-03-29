@@ -15,6 +15,7 @@
 			  "postal": null,
 			  "moment": null,
 			  "hammer": null,
+			  "store": null,
 			  "knockout": null,
 			  "knockout.mapping": null,
 			  "ko.extenders.store": null
