@@ -1,3 +1,16 @@
+<%
+
+// snippet loader
+
+	function snippet(filename, args) {
+		var arg_type = typeof args;
+		if (arg_type == "string" || arg_type == "number") {
+			args = { 'id' : args };
+		}
+		partial ('snippets/'+filename, args);
+	}
+
+%>
 <!DOCTYPE html>
 <html>
 	<head>
