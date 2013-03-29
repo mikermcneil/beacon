@@ -15,9 +15,10 @@ Todos:
 - get require.js working with knockout (or bypass it)
 - integrate require.js compiling into process
 - finish view snippets, inspired by punch-thirdparty-snippets-helper
--- how to call snippets from any template?
--- how to pass variables into snippets?
--- make google fonts working, and supporting array
+- how to call snippets from any template?
+- make cleaner way to call snippets, pass single var?
+- how to pass variables into snippets?
+- make google fonts working, and supporting array
 - connect Knockout.js mapping plugin to the Sails websocket
 - HTML minification?
 - markdown view parser?

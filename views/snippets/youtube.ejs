@@ -1,1 +1,5 @@
-<iframe width="420" height="315" src="http://www.youtube.com/embed/<%- arg1 %>" frameborder="0" allowfullscreen></iframe>
+<%
+	if (width === undefined) width = 400;
+	if (height === undefined) height = 300;	
+%>
+<iframe width="<%- width %>" height="<%- height %>" src="http://www.youtube.com/embed/<%- id %>" frameborder="0" allowfullscreen></iframe>
