@@ -1,0 +1,25 @@
+{
+    "name": "ko.extenders.store",
+    "version": "1.0.6",
+    "description": "A simple Knockout extender for store.js",
+    "github": "http://github.com/rjkip/ko.extenders.store",
+    "maintainers": [
+        {
+            "name": "Reinier Kip",
+            "email": "github@reinierkip.nl"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "jam": {
+        "main": "ko.extenders.store.js",
+        "dependencies": {
+            "knockout": "2.2.x",
+            "store": "1.3.x"
+        }
+    }
+}

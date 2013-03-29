@@ -1,6 +1,8 @@
 # sails-plus
 ### a Sails.js application boilerplate
 
+*Under Construction*
+
 This is a fresh Sails install, with a few extras:
 
 - some useful packages are added in package.json, including the Jam.js frontend dependency manager
@@ -9,6 +11,7 @@ This is a fresh Sails install, with a few extras:
 
 Todos:
 
+- integrate require.js compiling
 - view helpers/snippets, inspired by punch-thirdparty-snippets-helper
 - connect Knockout.js mapping plugin to the Sails websocket
 - HTML minification?

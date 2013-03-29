@@ -9,8 +9,9 @@
 		"moment": null        
     },
 	"jam": {
+	    "packageDir": "public/lib",
+	    "baseUrl": "public",		
 		"dependencies": {
-			  "jquery": null,
 			  "modernizr": null,
 			  "postal": null,
 			  "moment": null,
@@ -26,7 +27,7 @@
         "debug": "node debug .app.js"
     },
     "main": ".app.js",
-    "repository": "",
+    "repository": "git@github.com:dylanized/sails-plus.git",
     "author": "",
     "license": "MIT"
 }
