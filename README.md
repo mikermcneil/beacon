@@ -1,7 +1,7 @@
 # sails-plus
 ### a Sails.js application boilerplate
 
-This is the out-of-the-box Sails install, with a few extras:
+This is a fresh Sails install, with a few extras:
 
 - some useful packages are added in package.json, including the Jam.js frontend dependency manager
 - Jam and Require.js integrated into the site layout header
