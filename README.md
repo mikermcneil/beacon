@@ -1,5 +1,5 @@
 # sails-plus
-### a Sails application boilerplate
+### a Sails.js application boilerplate
 
 This is the out-of-the-box Sails install, with a few extras:
 
