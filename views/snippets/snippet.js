@@ -2,6 +2,6 @@
 
 function snippet(filename, args) {
 
-	// render load filename.ejs
+	// render filename.ejs
 
 }
