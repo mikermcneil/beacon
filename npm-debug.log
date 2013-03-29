@@ -1,0 +1,1491 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'update' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+5 verbose cache add [ 'sails', '0.8.894' ]
+6 verbose cache add name="sails" spec="0.8.894" args=["sails","0.8.894"]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '0.8.894',
+7 verbose parsed url   path: '0.8.894',
+7 verbose parsed url   href: '0.8.894' }
+8 verbose addNamed [ 'sails', '0.8.894' ]
+9 verbose addNamed [ '0.8.894', '0.8.894' ]
+10 verbose cache add [ 'jam', null ]
+11 verbose cache add name=undefined spec="jam" args=["jam",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'jam',
+12 verbose parsed url   path: 'jam',
+12 verbose parsed url   href: 'jam' }
+13 verbose cache add [ 'moment', null ]
+14 verbose cache add name=undefined spec="moment" args=["moment",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'moment',
+15 verbose parsed url   path: 'moment',
+15 verbose parsed url   href: 'moment' }
+16 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+17 verbose lock sails@0.8.894 /Users/dylanhassinger/.npm/61827472-sails-0-8-894.lock
+18 silly lockFile da3dd5c2-jam jam
+19 verbose lock jam /Users/dylanhassinger/.npm/da3dd5c2-jam.lock
+20 silly lockFile b56def36-moment moment
+21 verbose lock moment /Users/dylanhassinger/.npm/b56def36-moment.lock
+22 verbose url raw sails/0.8.894
+23 verbose url resolving [ 'https://registry.npmjs.org/', './sails/0.8.894' ]
+24 verbose url resolved https://registry.npmjs.org/sails/0.8.894
+25 info trying registry request attempt 1 at 04:02:17
+26 verbose etag "6BM4BLU86SHTL9EED5GX2CMKH"
+27 http GET https://registry.npmjs.org/sails/0.8.894
+28 silly lockFile b56def36-moment moment
+29 silly lockFile b56def36-moment moment
+30 silly lockFile da3dd5c2-jam jam
+31 silly lockFile da3dd5c2-jam jam
+32 verbose addNamed [ 'moment', '' ]
+33 verbose addNamed [ null, '' ]
+34 silly lockFile 42aa250a-moment moment@
+35 verbose lock moment@ /Users/dylanhassinger/.npm/42aa250a-moment.lock
+36 silly addNameRange { name: 'moment', range: '', hasData: false }
+37 verbose addNamed [ 'jam', '' ]
+38 verbose addNamed [ null, '' ]
+39 silly lockFile 63da65eb-jam jam@
+40 verbose lock jam@ /Users/dylanhassinger/.npm/63da65eb-jam.lock
+41 silly addNameRange { name: 'jam', range: '', hasData: false }
+42 verbose url raw moment
+43 verbose url resolving [ 'https://registry.npmjs.org/', './moment' ]
+44 verbose url resolved https://registry.npmjs.org/moment
+45 info trying registry request attempt 1 at 04:02:18
+46 verbose etag "9R4OJHD1ZUT8RTK4JPYODDOY7"
+47 http GET https://registry.npmjs.org/moment
+48 verbose url raw jam
+49 verbose url resolving [ 'https://registry.npmjs.org/', './jam' ]
+50 verbose url resolved https://registry.npmjs.org/jam
+51 info trying registry request attempt 1 at 04:02:18
+52 verbose etag "YREC6OQC9SQDPYP1Z69PLB2O"
+53 http GET https://registry.npmjs.org/jam
+54 http 304 https://registry.npmjs.org/sails/0.8.894
+55 silly registry.get cb [ 304,
+55 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+55 silly registry.get     etag: '"6BM4BLU86SHTL9EED5GX2CMKH"',
+55 silly registry.get     date: 'Fri, 29 Mar 2013 09:02:20 GMT',
+55 silly registry.get     'content-length': '0' } ]
+56 verbose etag sails/0.8.894 from cache
+57 http 304 https://registry.npmjs.org/jam
+58 silly registry.get cb [ 304,
+58 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+58 silly registry.get     etag: '"YREC6OQC9SQDPYP1Z69PLB2O"',
+58 silly registry.get     date: 'Fri, 29 Mar 2013 09:02:20 GMT',
+58 silly registry.get     'content-length': '0' } ]
+59 verbose etag jam from cache
+60 http 304 https://registry.npmjs.org/moment
+61 silly registry.get cb [ 304,
+61 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+61 silly registry.get     etag: '"9R4OJHD1ZUT8RTK4JPYODDOY7"',
+61 silly registry.get     date: 'Fri, 29 Mar 2013 09:02:20 GMT',
+61 silly registry.get     'content-length': '0' } ]
+62 verbose etag moment from cache
+63 silly addNameRange number 2 { name: 'jam', range: '', hasData: true }
+64 silly addNameRange versions [ 'jam',
+64 silly addNameRange   [ '0.1.0',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.2.1',
+64 silly addNameRange     '0.2.2',
+64 silly addNameRange     '0.2.3-1',
+64 silly addNameRange     '0.3.0-0',
+64 silly addNameRange     '0.4.0-0',
+64 silly addNameRange     '0.4.1-0',
+64 silly addNameRange     '0.4.2-0',
+64 silly addNameRange     '0.4.3-0' ] ]
+65 verbose addNamed [ 'jam', '0.4.3-0' ]
+66 verbose addNamed [ '0.4.3-0', '0.4.3-0' ]
+67 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+68 verbose lock jam@0.4.3-0 /Users/dylanhassinger/.npm/40940a7f-jam-0-4-3-0.lock
+69 silly addNameRange number 2 { name: 'moment', range: '', hasData: true }
+70 silly addNameRange versions [ 'moment',
+70 silly addNameRange   [ '1.0.0',
+70 silly addNameRange     '1.0.1',
+70 silly addNameRange     '1.1.0',
+70 silly addNameRange     '1.1.1',
+70 silly addNameRange     '1.2.0',
+70 silly addNameRange     '1.3.0',
+70 silly addNameRange     '1.4.0',
+70 silly addNameRange     '1.5.0',
+70 silly addNameRange     '1.5.1',
+70 silly addNameRange     '1.6.0',
+70 silly addNameRange     '1.6.1',
+70 silly addNameRange     '1.6.2',
+70 silly addNameRange     '1.7.0',
+70 silly addNameRange     '1.7.1',
+70 silly addNameRange     '1.7.2',
+70 silly addNameRange     '2.0.0' ] ]
+71 verbose addNamed [ 'moment', '2.0.0' ]
+72 verbose addNamed [ '2.0.0', '2.0.0' ]
+73 silly lockFile 43720542-moment-2-0-0 moment@2.0.0
+74 verbose lock moment@2.0.0 /Users/dylanhassinger/.npm/43720542-moment-2-0-0.lock
+75 verbose read json /Users/dylanhassinger/.npm/sails/0.8.894/package/package.json
+76 verbose read json /Users/dylanhassinger/.npm/jam/0.4.3-0/package/package.json
+77 verbose read json /Users/dylanhassinger/.npm/moment/2.0.0/package/package.json
+78 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+79 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+80 silly lockFile 43720542-moment-2-0-0 moment@2.0.0
+81 silly lockFile 43720542-moment-2-0-0 moment@2.0.0
+82 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+83 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+84 silly lockFile 42aa250a-moment moment@
+85 silly lockFile 42aa250a-moment moment@
+86 silly lockFile 63da65eb-jam jam@
+87 silly lockFile 63da65eb-jam jam@
+88 info outdated updating [ [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+88 info outdated     'sails',
+88 info outdated     undefined,
+88 info outdated     '0.8.894' ],
+88 info outdated   [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+88 info outdated     'moment',
+88 info outdated     undefined,
+88 info outdated     '2.0.0' ],
+88 info outdated   [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+88 info outdated     'jam',
+88 info outdated     undefined,
+88 info outdated     '0.4.3-0' ] ]
+89 verbose install where,what [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+89 verbose install   [ 'sails@0.8.894' ] ]
+90 verbose install where,what [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+90 verbose install   [ 'moment@2.0.0' ] ]
+91 verbose install where,what [ '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase',
+91 verbose install   [ 'jam@0.4.3-0' ] ]
+92 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+93 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+94 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+95 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+96 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+97 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+98 verbose readDependencies using package.json deps
+99 verbose cache add [ 'sails@0.8.894', null ]
+100 verbose cache add name=undefined spec="sails@0.8.894" args=["sails@0.8.894",null]
+101 verbose parsed url { protocol: null,
+101 verbose parsed url   slashes: null,
+101 verbose parsed url   auth: null,
+101 verbose parsed url   host: null,
+101 verbose parsed url   port: null,
+101 verbose parsed url   hostname: null,
+101 verbose parsed url   hash: null,
+101 verbose parsed url   search: null,
+101 verbose parsed url   query: null,
+101 verbose parsed url   pathname: 'sails@0.8.894',
+101 verbose parsed url   path: 'sails@0.8.894',
+101 verbose parsed url   href: 'sails@0.8.894' }
+102 verbose cache add name="sails" spec="0.8.894" args=["sails","0.8.894"]
+103 verbose parsed url { protocol: null,
+103 verbose parsed url   slashes: null,
+103 verbose parsed url   auth: null,
+103 verbose parsed url   host: null,
+103 verbose parsed url   port: null,
+103 verbose parsed url   hostname: null,
+103 verbose parsed url   hash: null,
+103 verbose parsed url   search: null,
+103 verbose parsed url   query: null,
+103 verbose parsed url   pathname: '0.8.894',
+103 verbose parsed url   path: '0.8.894',
+103 verbose parsed url   href: '0.8.894' }
+104 verbose addNamed [ 'sails', '0.8.894' ]
+105 verbose addNamed [ '0.8.894', '0.8.894' ]
+106 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+107 verbose lock sails@0.8.894 /Users/dylanhassinger/.npm/61827472-sails-0-8-894.lock
+108 verbose readDependencies using package.json deps
+109 verbose cache add [ 'moment@2.0.0', null ]
+110 verbose cache add name=undefined spec="moment@2.0.0" args=["moment@2.0.0",null]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'moment@2.0.0',
+111 verbose parsed url   path: 'moment@2.0.0',
+111 verbose parsed url   href: 'moment@2.0.0' }
+112 verbose cache add name="moment" spec="2.0.0" args=["moment","2.0.0"]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: '2.0.0',
+113 verbose parsed url   path: '2.0.0',
+113 verbose parsed url   href: '2.0.0' }
+114 verbose addNamed [ 'moment', '2.0.0' ]
+115 verbose addNamed [ '2.0.0', '2.0.0' ]
+116 silly lockFile 43720542-moment-2-0-0 moment@2.0.0
+117 verbose lock moment@2.0.0 /Users/dylanhassinger/.npm/43720542-moment-2-0-0.lock
+118 verbose readDependencies using package.json deps
+119 verbose cache add [ 'jam@0.4.3-0', null ]
+120 verbose cache add name=undefined spec="jam@0.4.3-0" args=["jam@0.4.3-0",null]
+121 verbose parsed url { protocol: null,
+121 verbose parsed url   slashes: null,
+121 verbose parsed url   auth: null,
+121 verbose parsed url   host: null,
+121 verbose parsed url   port: null,
+121 verbose parsed url   hostname: null,
+121 verbose parsed url   hash: null,
+121 verbose parsed url   search: null,
+121 verbose parsed url   query: null,
+121 verbose parsed url   pathname: 'jam@0.4.3-0',
+121 verbose parsed url   path: 'jam@0.4.3-0',
+121 verbose parsed url   href: 'jam@0.4.3-0' }
+122 verbose cache add name="jam" spec="0.4.3-0" args=["jam","0.4.3-0"]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: '0.4.3-0',
+123 verbose parsed url   path: '0.4.3-0',
+123 verbose parsed url   href: '0.4.3-0' }
+124 verbose addNamed [ 'jam', '0.4.3-0' ]
+125 verbose addNamed [ '0.4.3-0', '0.4.3-0' ]
+126 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+127 verbose lock jam@0.4.3-0 /Users/dylanhassinger/.npm/40940a7f-jam-0-4-3-0.lock
+128 verbose registry.get sails/0.8.894 not expired, no request
+129 verbose from cache /Users/dylanhassinger/.npm/sails/0.8.894/package/package.json
+130 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+131 silly lockFile 61827472-sails-0-8-894 sails@0.8.894
+132 silly resolved [ { name: 'sails',
+132 silly resolved     author: { name: 'Mike McNeil', email: 'mike@balderdash.co' },
+132 silly resolved     contributors:
+132 silly resolved      [ [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object],
+132 silly resolved        [Object] ],
+132 silly resolved     version: '0.8.894',
+132 silly resolved     description: 'API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)',
+132 silly resolved     homepage: 'http://sailsjs.com',
+132 silly resolved     keywords:
+132 silly resolved      [ 'mvc',
+132 silly resolved        'web-framework',
+132 silly resolved        'rails',
+132 silly resolved        'ruby-on-rails',
+132 silly resolved        'express',
+132 silly resolved        'sails',
+132 silly resolved        'sailsjs',
+132 silly resolved        'sails.js',
+132 silly resolved        'REST',
+132 silly resolved        'API',
+132 silly resolved        'orm',
+132 silly resolved        'mysql',
+132 silly resolved        'active-record',
+132 silly resolved        'socket.io' ],
+132 silly resolved     main: './lib/sails',
+132 silly resolved     bin: { sails: './bin/sails.js' },
+132 silly resolved     scripts: { test: 'node test/start.js' },
+132 silly resolved     directories: { lib: 'lib' },
+132 silly resolved     dependencies:
+132 silly resolved      { 'sails-dirty': '0.7.2',
+132 silly resolved        express: '2.5.11',
+132 silly resolved        'socket.io': '0.9.6',
+132 silly resolved        ejs: '0.7.2',
+132 silly resolved        connect: '1.8.3',
+132 silly resolved        async: '0.1.22',
+132 silly resolved        underscore: '1.4.2',
+132 silly resolved        less: '1.3.0',
+132 silly resolved        optimist: '0.3.4',
+132 silly resolved        'underscore.string': '2.3.0',
+132 silly resolved        glob: '3.1.14',
+132 silly resolved        winston: '0.6.2',
+132 silly resolved        'fs-extra': '0.5.0',
+132 silly resolved        i18n: '0.3.5',
+132 silly resolved        wrench: '1.4.4',
+132 silly resolved        'uglify-js': '2.2.4',
+132 silly resolved        'asset-rack': '2.0.6',
+132 silly resolved        'node-uuid': '~1.4.0',
+132 silly resolved        parley: '0.0.2',
+132 silly resolved        'include-all': '0.0.5',
+132 silly resolved        forever: '~0.10.0',
+132 silly resolved        'clean-css': '0.10.1',
+132 silly resolved        'fs-watch-tree': '~0.2.2',
+132 silly resolved        jade: '0.28.0' },
+132 silly resolved     devDependencies: { mocha: '*', chai: '*', 'coffee-script': '*', request: '*' },
+132 silly resolved     repository: { type: 'git', url: 'git://github.com/balderdashy/sails.git' },
+132 silly resolved     licenses: [ [Object] ],
+132 silly resolved     bugs: { url: 'http://github.com/balderdashy/sails/issues' },
+132 silly resolved     engines: { node: '<= 0.8.22' },
+132 silly resolved     readme: '![image_devInTub@2x.png](http://i.imgur.com/Tj9Nk.png) \n\n# Sails.js\nSails.js makes it easy to build custom, enterprise-grade Node.js apps. It is designed to resemble the MVC architecture from frameworks like Ruby on Rails, but with support for the more modern, data-oriented style of web app development.  It\'s especially good for building realtime features like chat.\n\n# Intro to Sails.js\n[![ScreenShot](http://balderdashy.github.com/sails/images/screenshot.png)](http://youtu.be/GK-tFvpIR7c)\n\n\n# Installation\n\nTo install the latest stable release with the command-line tool:\n```sh\nsudo npm -g install sails\n```\n\n\n# Creating a New Sails Project\n\nCreate a new app\n```sh\n# Create the app\nsails new testProject\n```\n\nLift Sails\n```sh\n# cd into the new folder\ncd testProject\n\n# Fire up the server  \nsails lift\n```\n\nThe default port for Sails is 1337.  At this point if you visit <a href="http://localhost:1337/">http://localhost:1337/</a> You will see the default home page.  \n\nNow, let\'s get Sails to do cool stuff.\n\n# Hello, Sails!\n\nTo get Sails to say "Hello World!", you need only to change the view for the default home page in `views/home/index.ejs`.  But that doesn\'t really teach us a whole lot-- instead, let\'s create a new controller and have IT tell us hello.\n\n```sh\nsails generate controller hello index\n```\n\nThis will generate a file called `HelloController.js` in your app\'s `api/controllers` directory with one action, `index()`.\n\nNow let\'s edit that action to send back the string `\'Hello World!\'`.\n\n```javascript\n\nvar HelloController = {\n\n\tindex: function(req, res) {\n\t\tres.send(\'Hello World!\');\n\t}\n}\n\nmodule.exports = HelloController;\n```\n\n\nLet\'s say we want the application to display this hello response when a request comes in for `http://localhost:1337/hi`. \nGo into the **/config/routes.js** file. Here you can manually define these mappings as you like. Change the file to look like this.\n\n```javascript\nvar routes = {\n\t\'/hi\': {\n\t\tcontroller: \'hello\',\n\t\taction: \'index\'\n\t}\n}\n\nmodule.exports = routes;\n```\n\nFinally, restart the server by going to your node terminal and pressing control+c. Then enter the\nfollowing.\n\n```sh\nsails lift\n```\n\nNow when you visit <a href="http://localhost:1337/">http://localhost:1337/hi</a> your browser will say **\'Hello World!\'**.\n\n> ### Notes:\n> We could have omitted `action: \'index\'`, since it\'s the default, but I left it in for clarity.\n\n> As you will see when working more with Sails.js, one great feature is that by default, you do not **have**\nto define routes for controller actions. Sails.js will do its best to understand what you\'re talking about.  \nFor instance, if you were to visit http://localhost:1337/hello, you\'d notice that it routes you to the index action of `HelloController`.\n\n> Finally, if you were to omit HelloController altogether, but included a view in `views/hello/index.ejs`, Sails.js will serve that view when you visit `/hello`.\n\n> You can learn more about that on the <a href="https://github.com/balderdashy/sails/wiki/Routing">Routing</a> section of this wiki.\n\n\n# Creating a Model\nCreating a model is very easy with the command line tool. You can even define attributes and their\ntype by adding arguments at the end of the command. To generate a User model, enter the following:\n```\nsails generate model User\n```\nIf you check out your app, you\'ll notice that this created a file at **/api/model/User.js**.\n\n<!--\n  Let\'s give her a name-- try uncommenting the name attribute so it looks more or less like this:\n\n```javascript\nvar User = {\n        attributes      : {\n                name: \'STRING\'\n        }\n\n};\nmodule.exports = User;\n```\n-->\n\n# What\'s Better Than Scaffolding?  How About a free JSON API?\n\nSails API blueprints are nothing like Rails scaffolding. HTML scaffolds don\'t really make sense for \nmodern web apps. Instead, Sails automatically builds a RESTful JSON API for your models.\nMost importantly, it supports HTTP _and_ WebSockets. By default for every model you generate, you get the\nbasic CRUD operations automatically.\n\nFor instance, after generating the User model above, if you POST to `http://localhost:1337/user` or visit `http://localhost:1337/user/create`, you\'ll see:\n```json\n{\n  "createdAt": "2013-01-10T01:33:19.105Z",\n  "updatedAt": "2013-01-10T01:33:19.105Z",\n  "id": 1\n}\n```\n\nThat\'s it!  You just created a model in the database!  You can also `find`, `update`, and `destroy` users:\n\n```\n# List of all users\nhttp://localhost:1337/user\n\n# Find the user with id 1\nhttp://localhost:1337/user/1\n\n# Create a new user\nhttp://localhost:1337/user/create?name=Fisslewick\n(or send an HTTP POST to http://localhost:1337/user)\n\n# Update the name of the user with id 1\nhttp://localhost:1337/user/update/1?name=Gordo\n(or send an HTTP PUT to http://localhost:1337/user/1)\n\n# Destroy the user with id 1\nhttp://localhost:1337/user/destroy/1\n(or send an HTTP DELETE to http://localhost:1337/user/1)\n```\n\n\nOne last thing to note-- `findAll` automatically supports search, limit, skip (pagination), sorting, startsWith, endsWith, contains, greaterThan, lessThan, and not filtering.\n\n\n## Additional Features\nSails does a few things other Node.js MVC frameworks can\'t do:\n- Automatically generated JSON API for manipulating models means you don\'t have to write any backend code to build simple database apps\n- Built-in authentication, role-based access control, and customizable policies assignable at the controller/action level\n- Transport agnostic routing: Sails controllers also handle Socket.io / WebSocket messages!  This makes it much easier to send the server-originated or \'comet\' notifications you need for features like chat, realtime analytics, and multiplayer games.\n- Automatic asset minification: Your UI code is automatically included in development mode, and minified into a simple, gzipped file in production.  Also supports LESS and CoffeeScript.\n\n\nTo learn more, check out the documentation here: \nhttps://github.com/balderdashy/sails/wiki/_pages\n\n\n\nDependencies and Compatibility\n--\n\nTested with node v0.8.22\nSails is built on the rock-solid foundations of ExpressJS and Socket.io.  \n\n\n\n\n\n\n<!--\n![icon_circlechart@2x.png](http://i.imgur.com/hXc06.png) \n\nDemo\n--\n\n*Try it in two browser windows*\n\nhttp://sailsjs.com:1337/experiment#subcomponents\n\n\n#### Code\nhttps://github.com/balderdashy/sails-example\n-->\n\n\n\n\n\n\n\n\n\n\n![icon_circleheart@2x.png](http://i.imgur.com/liHPV.png) \n## Who Built This?\n\nThe Sails framework was developed by Mike McNeil (@mikermcneil) and is maintained by Balderdash (@balderdashy), a realtime web & mobile studio I started with Heather White (@hdesignsit) in Austin, TX.\n\nAfter building a few realtime javascript apps and taking them into production, we realized that the  JavaScript development landscape is very much still the Wild West.  Over time, after trying lots of different methodologies (on the front end and the back), we decided to crystallize all of our best practices into this framework.  I hope it saves you some time :)\n\n\n\n\n\n\n\n![icon_circlelightbulb@2x.png](http://i.imgur.com/eOFXn.png)  \n\nLicense\n--\n\nSails is built around so many great open-source technologies that it would never have crossed our minds to keep it proprietary.  We owe huge gratitude and props to TJ Holowaychuk (@visionmedia) and Guillermo Rauch (@guille) for the work they did, as well as the stewards of all the other open-source modules we use.  Sails could never have been developed without your tremendous contributions to the node community.\n\n\nThe MIT License (MIT)\n--\n\nCopyright © 2012-2013 Mike McNeil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/8acf2fc2ca0aca8a3018e355ad776ed7 "githalytics.com")](http://githalytics.com/balderdashy/sails)\n',
+132 silly resolved     readmeFilename: 'README.md',
+132 silly resolved     _id: 'sails@0.8.894',
+132 silly resolved     _from: 'sails@0.8.894' } ]
+133 info install sails@0.8.894 into /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase
+134 info installOne sails@0.8.894
+135 warn engine sails@0.8.894: wanted: {"node":"<= 0.8.22"} (current: {"node":"v0.10.0","npm":"1.2.14"})
+136 verbose from cache /Users/dylanhassinger/.npm/sails/0.8.894/package/package.json
+137 info /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails unbuild
+138 verbose read json /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails/package.json
+139 verbose url raw jam/0.4.3-0
+140 verbose url resolving [ 'https://registry.npmjs.org/', './jam/0.4.3-0' ]
+141 verbose url resolved https://registry.npmjs.org/jam/0.4.3-0
+142 info trying registry request attempt 1 at 04:02:21
+143 verbose etag "YREC6OQC9SQDPYP1Z69PLB2O"
+144 http GET https://registry.npmjs.org/jam/0.4.3-0
+145 verbose tar unpack /Users/dylanhassinger/.npm/sails/0.8.894/package.tgz
+146 silly lockFile 02fcc553--100-codebase-node-modules-sails /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails
+147 verbose lock /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails /Users/dylanhassinger/.npm/02fcc553--100-codebase-node-modules-sails.lock
+148 silly lockFile d1f7c5f0-er-npm-sails-0-8-894-package-tgz /Users/dylanhassinger/.npm/sails/0.8.894/package.tgz
+149 verbose lock /Users/dylanhassinger/.npm/sails/0.8.894/package.tgz /Users/dylanhassinger/.npm/d1f7c5f0-er-npm-sails-0-8-894-package-tgz.lock
+150 verbose url raw moment/2.0.0
+151 verbose url resolving [ 'https://registry.npmjs.org/', './moment/2.0.0' ]
+152 verbose url resolved https://registry.npmjs.org/moment/2.0.0
+153 info trying registry request attempt 1 at 04:02:22
+154 verbose etag "9R4OJHD1ZUT8RTK4JPYODDOY7"
+155 http GET https://registry.npmjs.org/moment/2.0.0
+156 silly gunzTarPerm modes [ '755', '644' ]
+157 silly gunzTarPerm extractEntry package.json
+158 silly gunzTarPerm extractEntry .npmignore
+159 silly gunzTarPerm extractEntry README.md
+160 silly gunzTarPerm extractEntry .htaccess
+161 silly gunzTarPerm extractEntry bin/mockSails.js
+162 silly gunzTarPerm extractEntry bin/sails.js
+163 silly gunzTarPerm extractEntry bin/blueprints/federatedAction.js
+164 silly gunzTarPerm extractEntry bin/blueprints/adapter-persistent.js
+165 silly gunzTarPerm extractEntry bin/blueprints/adapter.js
+166 silly gunzTarPerm extractEntry bin/blueprints/app.js
+167 silly gunzTarPerm extractEntry bin/blueprints/attribute.js
+168 silly gunzTarPerm extractEntry bin/blueprints/adapter-crud.js
+169 silly gunzTarPerm extractEntry bin/blueprints/controller.js
+170 silly gunzTarPerm extractEntry bin/blueprints/action.js
+171 silly gunzTarPerm extractEntry bin/blueprints/indexAction.js
+172 silly gunzTarPerm extractEntry bin/blueprints/model.js
+173 silly gunzTarPerm extractEntry bin/blueprints/sails.io.js
+174 silly gunzTarPerm extractEntry bin/blueprints/component.js
+175 silly gunzTarPerm extractEntry bin/blueprints/config/adapters.js
+176 silly gunzTarPerm extractEntry bin/blueprints/config/application.js
+177 silly gunzTarPerm extractEntry bin/blueprints/config/assets.js
+178 silly gunzTarPerm extractEntry bin/blueprints/config/bootstrap.js
+179 silly gunzTarPerm extractEntry bin/blueprints/config/local.js
+180 silly gunzTarPerm extractEntry bin/blueprints/config/policies.js
+181 silly gunzTarPerm extractEntry bin/blueprints/config/routes.js
+182 silly gunzTarPerm extractEntry bin/blueprints/config/locales/english.js
+183 silly gunzTarPerm extractEntry bin/blueprints/gitignore
+184 silly gunzTarPerm extractEntry bin/blueprints/haml/config.js
+185 silly gunzTarPerm extractEntry bin/blueprints/haml/404.haml
+186 silly gunzTarPerm extractEntry bin/blueprints/haml/500.haml
+187 silly gunzTarPerm extractEntry bin/blueprints/haml/index.haml
+188 silly gunzTarPerm extractEntry bin/blueprints/haml/layout.haml
+189 silly gunzTarPerm extractEntry bin/blueprints/.gitkeep
+190 silly gunzTarPerm extractEntry bin/blueprints/jade/config.js
+191 silly gunzTarPerm extractEntry bin/blueprints/jade/404.jade
+192 silly gunzTarPerm extractEntry bin/blueprints/jade/500.jade
+193 silly gunzTarPerm extractEntry bin/blueprints/jade/index.jade
+194 silly gunzTarPerm extractEntry bin/blueprints/jade/layout.jade
+195 silly gunzTarPerm extractEntry bin/blueprints/layout.css
+196 silly gunzTarPerm extractEntry bin/blueprints/ejs/config.js
+197 silly gunzTarPerm extractEntry bin/blueprints/ejs/404.ejs
+198 silly gunzTarPerm extractEntry bin/blueprints/ejs/500.ejs
+199 silly gunzTarPerm extractEntry bin/blueprints/ejs/index.ejs
+200 silly gunzTarPerm extractEntry bin/blueprints/ejs/layout.ejs
+201 silly gunzTarPerm extractEntry bin/blueprints/policies/authenticated.js
+202 silly gunzTarPerm extractEntry bin/blueprints/reset.css
+203 silly gunzTarPerm extractEntry bin/blueprints/robots.txt
+204 silly gunzTarPerm extractEntry bin/blueprints/favicon.ico
+205 silly gunzTarPerm extractEntry bin/blueprints/template.ejs
+206 silly gunzTarPerm extractEntry bin/blueprints/view.ejs
+207 silly gunzTarPerm extractEntry lib/assets.js
+208 silly gunzTarPerm extractEntry lib/interpreter.js
+209 silly gunzTarPerm extractEntry lib/loader.js
+210 silly gunzTarPerm extractEntry lib/logger.js
+211 silly gunzTarPerm extractEntry lib/i18n.js
+212 silly gunzTarPerm extractEntry lib/configuration.js
+213 silly gunzTarPerm extractEntry lib/pubsub.js
+214 silly gunzTarPerm extractEntry lib/request.js
+215 silly gunzTarPerm extractEntry lib/router.js
+216 silly gunzTarPerm extractEntry lib/sails.js
+217 silly gunzTarPerm extractEntry lib/express.js
+218 silly gunzTarPerm extractEntry lib/util.js
+219 silly gunzTarPerm extractEntry lib/package.js
+220 silly gunzTarPerm extractEntry lib/policies.js
+221 silly gunzTarPerm extractEntry lib/scaffolds/controller.js
+222 silly gunzTarPerm extractEntry lib/scaffolds/error.js
+223 silly gunzTarPerm extractEntry lib/scaffolds/notFound.js
+224 silly gunzTarPerm extractEntry lib/waterline/.npmignore
+225 silly gunzTarPerm extractEntry lib/waterline/README.md
+226 silly gunzTarPerm extractEntry lib/waterline/augmentAttributes.js
+227 silly gunzTarPerm extractEntry lib/waterline/collection.js
+228 silly gunzTarPerm extractEntry lib/waterline/config.js
+229 silly gunzTarPerm extractEntry lib/waterline/adapter.js
+230 silly gunzTarPerm extractEntry lib/waterline/deferredObject.js
+231 silly gunzTarPerm extractEntry lib/waterline/normalize.js
+232 silly gunzTarPerm extractEntry lib/waterline/stream.js
+233 silly gunzTarPerm extractEntry lib/waterline/waterline.js
+234 silly gunzTarPerm extractEntry lib/waterline/defaultTransactionCollection.js
+235 silly gunzTarPerm extractEntry LICENSE.md
+236 silly gunzTarPerm extractEntry test/README.md
+237 silly gunzTarPerm extractEntry test/start.js
+238 silly gunzTarPerm extractEntry test/chai/fixtures/HelloController.js
+239 silly gunzTarPerm extractEntry test/chai/fixtures/routes.js
+240 silly gunzTarPerm extractEntry test/chai/test
+241 silly gunzTarPerm extractEntry test/chai/test.coffee
+242 silly gunzTarPerm extractEntry test/waterline/bootstrap.test.js
+243 silly gunzTarPerm extractEntry test/waterline/defaultsTo.test.js
+244 silly gunzTarPerm extractEntry test/waterline/adapter/aggregateQueries.test.js
+245 silly gunzTarPerm extractEntry test/waterline/adapter/definitions.test.js
+246 silly gunzTarPerm extractEntry test/waterline/adapter/dynamicFinders.test.js
+247 silly gunzTarPerm extractEntry test/waterline/adapter/init.test.js
+248 silly gunzTarPerm extractEntry test/waterline/adapter/inQuery.test.js
+249 silly gunzTarPerm extractEntry test/waterline/adapter/deferred.test.js
+250 silly gunzTarPerm extractEntry test/waterline/adapter/limit.test.js
+251 silly gunzTarPerm extractEntry test/waterline/adapter/nullValues.test.js
+252 silly gunzTarPerm extractEntry test/waterline/adapter/queryEdgeCases.test.js
+253 silly gunzTarPerm extractEntry test/waterline/adapter/save.test.js
+254 silly gunzTarPerm extractEntry test/waterline/adapter/skip.test.js
+255 silly gunzTarPerm extractEntry test/waterline/adapter/crud.transactions.test.js
+256 silly gunzTarPerm extractEntry test/waterline/adapter/sort.test.js
+257 silly gunzTarPerm extractEntry test/waterline/adapter/crud.test.js
+258 silly gunzTarPerm extractEntry test/waterline/adapter/stream.test.js
+259 silly gunzTarPerm extractEntry test/waterline/adapter/count.test.js
+260 silly gunzTarPerm extractEntry test/waterline/adapter/subAttributeQueries.test.js
+261 silly gunzTarPerm extractEntry test/waterline/adapter/caseSensitivity.test.js
+262 silly gunzTarPerm extractEntry test/waterline/adapter/transactions.test.js
+263 silly gunzTarPerm extractEntry test/waterline/adapter/likeQueries.test.js
+264 silly gunzTarPerm extractEntry test/waterline/collections/User.js
+265 verbose read json /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails/package.json
+266 silly lockFile 02fcc553--100-codebase-node-modules-sails /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails
+267 silly lockFile 02fcc553--100-codebase-node-modules-sails /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails
+268 silly lockFile d1f7c5f0-er-npm-sails-0-8-894-package-tgz /Users/dylanhassinger/.npm/sails/0.8.894/package.tgz
+269 silly lockFile d1f7c5f0-er-npm-sails-0-8-894-package-tgz /Users/dylanhassinger/.npm/sails/0.8.894/package.tgz
+270 info preinstall sails@0.8.894
+271 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails/package.json
+272 verbose readDependencies using package.json deps
+273 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails/package.json
+274 verbose readDependencies using package.json deps
+275 verbose cache add [ 'ejs@0.7.2', null ]
+276 verbose cache add name=undefined spec="ejs@0.7.2" args=["ejs@0.7.2",null]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: 'ejs@0.7.2',
+277 verbose parsed url   path: 'ejs@0.7.2',
+277 verbose parsed url   href: 'ejs@0.7.2' }
+278 verbose cache add name="ejs" spec="0.7.2" args=["ejs","0.7.2"]
+279 verbose parsed url { protocol: null,
+279 verbose parsed url   slashes: null,
+279 verbose parsed url   auth: null,
+279 verbose parsed url   host: null,
+279 verbose parsed url   port: null,
+279 verbose parsed url   hostname: null,
+279 verbose parsed url   hash: null,
+279 verbose parsed url   search: null,
+279 verbose parsed url   query: null,
+279 verbose parsed url   pathname: '0.7.2',
+279 verbose parsed url   path: '0.7.2',
+279 verbose parsed url   href: '0.7.2' }
+280 verbose addNamed [ 'ejs', '0.7.2' ]
+281 verbose addNamed [ '0.7.2', '0.7.2' ]
+282 silly lockFile d1eb3701-ejs-0-7-2 ejs@0.7.2
+283 verbose lock ejs@0.7.2 /Users/dylanhassinger/.npm/d1eb3701-ejs-0-7-2.lock
+284 verbose cache add [ 'connect@1.8.3', null ]
+285 verbose cache add name=undefined spec="connect@1.8.3" args=["connect@1.8.3",null]
+286 verbose parsed url { protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: 'connect@1.8.3',
+286 verbose parsed url   path: 'connect@1.8.3',
+286 verbose parsed url   href: 'connect@1.8.3' }
+287 verbose cache add name="connect" spec="1.8.3" args=["connect","1.8.3"]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: '1.8.3',
+288 verbose parsed url   path: '1.8.3',
+288 verbose parsed url   href: '1.8.3' }
+289 verbose addNamed [ 'connect', '1.8.3' ]
+290 verbose addNamed [ '1.8.3', '1.8.3' ]
+291 silly lockFile 6bb36d15-connect-1-8-3 connect@1.8.3
+292 verbose lock connect@1.8.3 /Users/dylanhassinger/.npm/6bb36d15-connect-1-8-3.lock
+293 verbose cache add [ 'socket.io@0.9.6', null ]
+294 verbose cache add name=undefined spec="socket.io@0.9.6" args=["socket.io@0.9.6",null]
+295 verbose parsed url { protocol: null,
+295 verbose parsed url   slashes: null,
+295 verbose parsed url   auth: null,
+295 verbose parsed url   host: null,
+295 verbose parsed url   port: null,
+295 verbose parsed url   hostname: null,
+295 verbose parsed url   hash: null,
+295 verbose parsed url   search: null,
+295 verbose parsed url   query: null,
+295 verbose parsed url   pathname: 'socket.io@0.9.6',
+295 verbose parsed url   path: 'socket.io@0.9.6',
+295 verbose parsed url   href: 'socket.io@0.9.6' }
+296 verbose cache add name="socket.io" spec="0.9.6" args=["socket.io","0.9.6"]
+297 verbose parsed url { protocol: null,
+297 verbose parsed url   slashes: null,
+297 verbose parsed url   auth: null,
+297 verbose parsed url   host: null,
+297 verbose parsed url   port: null,
+297 verbose parsed url   hostname: null,
+297 verbose parsed url   hash: null,
+297 verbose parsed url   search: null,
+297 verbose parsed url   query: null,
+297 verbose parsed url   pathname: '0.9.6',
+297 verbose parsed url   path: '0.9.6',
+297 verbose parsed url   href: '0.9.6' }
+298 verbose addNamed [ 'socket.io', '0.9.6' ]
+299 verbose addNamed [ '0.9.6', '0.9.6' ]
+300 silly lockFile 7dc97856-socket-io-0-9-6 socket.io@0.9.6
+301 verbose lock socket.io@0.9.6 /Users/dylanhassinger/.npm/7dc97856-socket-io-0-9-6.lock
+302 verbose cache add [ 'async@0.1.22', null ]
+303 verbose cache add name=undefined spec="async@0.1.22" args=["async@0.1.22",null]
+304 verbose parsed url { protocol: null,
+304 verbose parsed url   slashes: null,
+304 verbose parsed url   auth: null,
+304 verbose parsed url   host: null,
+304 verbose parsed url   port: null,
+304 verbose parsed url   hostname: null,
+304 verbose parsed url   hash: null,
+304 verbose parsed url   search: null,
+304 verbose parsed url   query: null,
+304 verbose parsed url   pathname: 'async@0.1.22',
+304 verbose parsed url   path: 'async@0.1.22',
+304 verbose parsed url   href: 'async@0.1.22' }
+305 verbose cache add name="async" spec="0.1.22" args=["async","0.1.22"]
+306 verbose parsed url { protocol: null,
+306 verbose parsed url   slashes: null,
+306 verbose parsed url   auth: null,
+306 verbose parsed url   host: null,
+306 verbose parsed url   port: null,
+306 verbose parsed url   hostname: null,
+306 verbose parsed url   hash: null,
+306 verbose parsed url   search: null,
+306 verbose parsed url   query: null,
+306 verbose parsed url   pathname: '0.1.22',
+306 verbose parsed url   path: '0.1.22',
+306 verbose parsed url   href: '0.1.22' }
+307 verbose addNamed [ 'async', '0.1.22' ]
+308 verbose addNamed [ '0.1.22', '0.1.22' ]
+309 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+310 verbose lock async@0.1.22 /Users/dylanhassinger/.npm/09d21715-async-0-1-22.lock
+311 verbose cache add [ 'underscore@1.4.2', null ]
+312 verbose cache add name=undefined spec="underscore@1.4.2" args=["underscore@1.4.2",null]
+313 verbose parsed url { protocol: null,
+313 verbose parsed url   slashes: null,
+313 verbose parsed url   auth: null,
+313 verbose parsed url   host: null,
+313 verbose parsed url   port: null,
+313 verbose parsed url   hostname: null,
+313 verbose parsed url   hash: null,
+313 verbose parsed url   search: null,
+313 verbose parsed url   query: null,
+313 verbose parsed url   pathname: 'underscore@1.4.2',
+313 verbose parsed url   path: 'underscore@1.4.2',
+313 verbose parsed url   href: 'underscore@1.4.2' }
+314 verbose cache add name="underscore" spec="1.4.2" args=["underscore","1.4.2"]
+315 verbose parsed url { protocol: null,
+315 verbose parsed url   slashes: null,
+315 verbose parsed url   auth: null,
+315 verbose parsed url   host: null,
+315 verbose parsed url   port: null,
+315 verbose parsed url   hostname: null,
+315 verbose parsed url   hash: null,
+315 verbose parsed url   search: null,
+315 verbose parsed url   query: null,
+315 verbose parsed url   pathname: '1.4.2',
+315 verbose parsed url   path: '1.4.2',
+315 verbose parsed url   href: '1.4.2' }
+316 verbose addNamed [ 'underscore', '1.4.2' ]
+317 verbose addNamed [ '1.4.2', '1.4.2' ]
+318 silly lockFile 90fe1547-underscore-1-4-2 underscore@1.4.2
+319 verbose lock underscore@1.4.2 /Users/dylanhassinger/.npm/90fe1547-underscore-1-4-2.lock
+320 verbose cache add [ 'less@1.3.0', null ]
+321 verbose cache add name=undefined spec="less@1.3.0" args=["less@1.3.0",null]
+322 verbose parsed url { protocol: null,
+322 verbose parsed url   slashes: null,
+322 verbose parsed url   auth: null,
+322 verbose parsed url   host: null,
+322 verbose parsed url   port: null,
+322 verbose parsed url   hostname: null,
+322 verbose parsed url   hash: null,
+322 verbose parsed url   search: null,
+322 verbose parsed url   query: null,
+322 verbose parsed url   pathname: 'less@1.3.0',
+322 verbose parsed url   path: 'less@1.3.0',
+322 verbose parsed url   href: 'less@1.3.0' }
+323 verbose cache add name="less" spec="1.3.0" args=["less","1.3.0"]
+324 verbose parsed url { protocol: null,
+324 verbose parsed url   slashes: null,
+324 verbose parsed url   auth: null,
+324 verbose parsed url   host: null,
+324 verbose parsed url   port: null,
+324 verbose parsed url   hostname: null,
+324 verbose parsed url   hash: null,
+324 verbose parsed url   search: null,
+324 verbose parsed url   query: null,
+324 verbose parsed url   pathname: '1.3.0',
+324 verbose parsed url   path: '1.3.0',
+324 verbose parsed url   href: '1.3.0' }
+325 verbose addNamed [ 'less', '1.3.0' ]
+326 verbose addNamed [ '1.3.0', '1.3.0' ]
+327 silly lockFile 73e7059f-less-1-3-0 less@1.3.0
+328 verbose lock less@1.3.0 /Users/dylanhassinger/.npm/73e7059f-less-1-3-0.lock
+329 verbose cache add [ 'optimist@0.3.4', null ]
+330 verbose cache add name=undefined spec="optimist@0.3.4" args=["optimist@0.3.4",null]
+331 verbose parsed url { protocol: null,
+331 verbose parsed url   slashes: null,
+331 verbose parsed url   auth: null,
+331 verbose parsed url   host: null,
+331 verbose parsed url   port: null,
+331 verbose parsed url   hostname: null,
+331 verbose parsed url   hash: null,
+331 verbose parsed url   search: null,
+331 verbose parsed url   query: null,
+331 verbose parsed url   pathname: 'optimist@0.3.4',
+331 verbose parsed url   path: 'optimist@0.3.4',
+331 verbose parsed url   href: 'optimist@0.3.4' }
+332 verbose cache add name="optimist" spec="0.3.4" args=["optimist","0.3.4"]
+333 verbose parsed url { protocol: null,
+333 verbose parsed url   slashes: null,
+333 verbose parsed url   auth: null,
+333 verbose parsed url   host: null,
+333 verbose parsed url   port: null,
+333 verbose parsed url   hostname: null,
+333 verbose parsed url   hash: null,
+333 verbose parsed url   search: null,
+333 verbose parsed url   query: null,
+333 verbose parsed url   pathname: '0.3.4',
+333 verbose parsed url   path: '0.3.4',
+333 verbose parsed url   href: '0.3.4' }
+334 verbose addNamed [ 'optimist', '0.3.4' ]
+335 verbose addNamed [ '0.3.4', '0.3.4' ]
+336 silly lockFile 823918a4-optimist-0-3-4 optimist@0.3.4
+337 verbose lock optimist@0.3.4 /Users/dylanhassinger/.npm/823918a4-optimist-0-3-4.lock
+338 verbose cache add [ 'underscore.string@2.3.0', null ]
+339 verbose cache add name=undefined spec="underscore.string@2.3.0" args=["underscore.string@2.3.0",null]
+340 verbose parsed url { protocol: null,
+340 verbose parsed url   slashes: null,
+340 verbose parsed url   auth: null,
+340 verbose parsed url   host: null,
+340 verbose parsed url   port: null,
+340 verbose parsed url   hostname: null,
+340 verbose parsed url   hash: null,
+340 verbose parsed url   search: null,
+340 verbose parsed url   query: null,
+340 verbose parsed url   pathname: 'underscore.string@2.3.0',
+340 verbose parsed url   path: 'underscore.string@2.3.0',
+340 verbose parsed url   href: 'underscore.string@2.3.0' }
+341 verbose cache add name="underscore.string" spec="2.3.0" args=["underscore.string","2.3.0"]
+342 verbose parsed url { protocol: null,
+342 verbose parsed url   slashes: null,
+342 verbose parsed url   auth: null,
+342 verbose parsed url   host: null,
+342 verbose parsed url   port: null,
+342 verbose parsed url   hostname: null,
+342 verbose parsed url   hash: null,
+342 verbose parsed url   search: null,
+342 verbose parsed url   query: null,
+342 verbose parsed url   pathname: '2.3.0',
+342 verbose parsed url   path: '2.3.0',
+342 verbose parsed url   href: '2.3.0' }
+343 verbose addNamed [ 'underscore.string', '2.3.0' ]
+344 verbose addNamed [ '2.3.0', '2.3.0' ]
+345 silly lockFile e3dba6a2-underscore-string-2-3-0 underscore.string@2.3.0
+346 verbose lock underscore.string@2.3.0 /Users/dylanhassinger/.npm/e3dba6a2-underscore-string-2-3-0.lock
+347 verbose cache add [ 'glob@3.1.14', null ]
+348 verbose cache add name=undefined spec="glob@3.1.14" args=["glob@3.1.14",null]
+349 verbose parsed url { protocol: null,
+349 verbose parsed url   slashes: null,
+349 verbose parsed url   auth: null,
+349 verbose parsed url   host: null,
+349 verbose parsed url   port: null,
+349 verbose parsed url   hostname: null,
+349 verbose parsed url   hash: null,
+349 verbose parsed url   search: null,
+349 verbose parsed url   query: null,
+349 verbose parsed url   pathname: 'glob@3.1.14',
+349 verbose parsed url   path: 'glob@3.1.14',
+349 verbose parsed url   href: 'glob@3.1.14' }
+350 verbose cache add name="glob" spec="3.1.14" args=["glob","3.1.14"]
+351 verbose parsed url { protocol: null,
+351 verbose parsed url   slashes: null,
+351 verbose parsed url   auth: null,
+351 verbose parsed url   host: null,
+351 verbose parsed url   port: null,
+351 verbose parsed url   hostname: null,
+351 verbose parsed url   hash: null,
+351 verbose parsed url   search: null,
+351 verbose parsed url   query: null,
+351 verbose parsed url   pathname: '3.1.14',
+351 verbose parsed url   path: '3.1.14',
+351 verbose parsed url   href: '3.1.14' }
+352 verbose addNamed [ 'glob', '3.1.14' ]
+353 verbose addNamed [ '3.1.14', '3.1.14' ]
+354 silly lockFile 7cf60591-glob-3-1-14 glob@3.1.14
+355 verbose lock glob@3.1.14 /Users/dylanhassinger/.npm/7cf60591-glob-3-1-14.lock
+356 verbose cache add [ 'winston@0.6.2', null ]
+357 verbose cache add name=undefined spec="winston@0.6.2" args=["winston@0.6.2",null]
+358 verbose parsed url { protocol: null,
+358 verbose parsed url   slashes: null,
+358 verbose parsed url   auth: null,
+358 verbose parsed url   host: null,
+358 verbose parsed url   port: null,
+358 verbose parsed url   hostname: null,
+358 verbose parsed url   hash: null,
+358 verbose parsed url   search: null,
+358 verbose parsed url   query: null,
+358 verbose parsed url   pathname: 'winston@0.6.2',
+358 verbose parsed url   path: 'winston@0.6.2',
+358 verbose parsed url   href: 'winston@0.6.2' }
+359 verbose cache add name="winston" spec="0.6.2" args=["winston","0.6.2"]
+360 verbose parsed url { protocol: null,
+360 verbose parsed url   slashes: null,
+360 verbose parsed url   auth: null,
+360 verbose parsed url   host: null,
+360 verbose parsed url   port: null,
+360 verbose parsed url   hostname: null,
+360 verbose parsed url   hash: null,
+360 verbose parsed url   search: null,
+360 verbose parsed url   query: null,
+360 verbose parsed url   pathname: '0.6.2',
+360 verbose parsed url   path: '0.6.2',
+360 verbose parsed url   href: '0.6.2' }
+361 verbose addNamed [ 'winston', '0.6.2' ]
+362 verbose addNamed [ '0.6.2', '0.6.2' ]
+363 silly lockFile 6b025e09-winston-0-6-2 winston@0.6.2
+364 verbose lock winston@0.6.2 /Users/dylanhassinger/.npm/6b025e09-winston-0-6-2.lock
+365 verbose cache add [ 'fs-extra@0.5.0', null ]
+366 verbose cache add name=undefined spec="fs-extra@0.5.0" args=["fs-extra@0.5.0",null]
+367 verbose parsed url { protocol: null,
+367 verbose parsed url   slashes: null,
+367 verbose parsed url   auth: null,
+367 verbose parsed url   host: null,
+367 verbose parsed url   port: null,
+367 verbose parsed url   hostname: null,
+367 verbose parsed url   hash: null,
+367 verbose parsed url   search: null,
+367 verbose parsed url   query: null,
+367 verbose parsed url   pathname: 'fs-extra@0.5.0',
+367 verbose parsed url   path: 'fs-extra@0.5.0',
+367 verbose parsed url   href: 'fs-extra@0.5.0' }
+368 verbose cache add name="fs-extra" spec="0.5.0" args=["fs-extra","0.5.0"]
+369 verbose parsed url { protocol: null,
+369 verbose parsed url   slashes: null,
+369 verbose parsed url   auth: null,
+369 verbose parsed url   host: null,
+369 verbose parsed url   port: null,
+369 verbose parsed url   hostname: null,
+369 verbose parsed url   hash: null,
+369 verbose parsed url   search: null,
+369 verbose parsed url   query: null,
+369 verbose parsed url   pathname: '0.5.0',
+369 verbose parsed url   path: '0.5.0',
+369 verbose parsed url   href: '0.5.0' }
+370 verbose addNamed [ 'fs-extra', '0.5.0' ]
+371 verbose addNamed [ '0.5.0', '0.5.0' ]
+372 silly lockFile 3d3587fc-fs-extra-0-5-0 fs-extra@0.5.0
+373 verbose lock fs-extra@0.5.0 /Users/dylanhassinger/.npm/3d3587fc-fs-extra-0-5-0.lock
+374 verbose cache add [ 'i18n@0.3.5', null ]
+375 verbose cache add name=undefined spec="i18n@0.3.5" args=["i18n@0.3.5",null]
+376 verbose parsed url { protocol: null,
+376 verbose parsed url   slashes: null,
+376 verbose parsed url   auth: null,
+376 verbose parsed url   host: null,
+376 verbose parsed url   port: null,
+376 verbose parsed url   hostname: null,
+376 verbose parsed url   hash: null,
+376 verbose parsed url   search: null,
+376 verbose parsed url   query: null,
+376 verbose parsed url   pathname: 'i18n@0.3.5',
+376 verbose parsed url   path: 'i18n@0.3.5',
+376 verbose parsed url   href: 'i18n@0.3.5' }
+377 verbose cache add name="i18n" spec="0.3.5" args=["i18n","0.3.5"]
+378 verbose parsed url { protocol: null,
+378 verbose parsed url   slashes: null,
+378 verbose parsed url   auth: null,
+378 verbose parsed url   host: null,
+378 verbose parsed url   port: null,
+378 verbose parsed url   hostname: null,
+378 verbose parsed url   hash: null,
+378 verbose parsed url   search: null,
+378 verbose parsed url   query: null,
+378 verbose parsed url   pathname: '0.3.5',
+378 verbose parsed url   path: '0.3.5',
+378 verbose parsed url   href: '0.3.5' }
+379 verbose addNamed [ 'i18n', '0.3.5' ]
+380 verbose addNamed [ '0.3.5', '0.3.5' ]
+381 silly lockFile 0be97f23-i18n-0-3-5 i18n@0.3.5
+382 verbose lock i18n@0.3.5 /Users/dylanhassinger/.npm/0be97f23-i18n-0-3-5.lock
+383 verbose cache add [ 'wrench@1.4.4', null ]
+384 verbose cache add name=undefined spec="wrench@1.4.4" args=["wrench@1.4.4",null]
+385 verbose parsed url { protocol: null,
+385 verbose parsed url   slashes: null,
+385 verbose parsed url   auth: null,
+385 verbose parsed url   host: null,
+385 verbose parsed url   port: null,
+385 verbose parsed url   hostname: null,
+385 verbose parsed url   hash: null,
+385 verbose parsed url   search: null,
+385 verbose parsed url   query: null,
+385 verbose parsed url   pathname: 'wrench@1.4.4',
+385 verbose parsed url   path: 'wrench@1.4.4',
+385 verbose parsed url   href: 'wrench@1.4.4' }
+386 verbose cache add name="wrench" spec="1.4.4" args=["wrench","1.4.4"]
+387 verbose parsed url { protocol: null,
+387 verbose parsed url   slashes: null,
+387 verbose parsed url   auth: null,
+387 verbose parsed url   host: null,
+387 verbose parsed url   port: null,
+387 verbose parsed url   hostname: null,
+387 verbose parsed url   hash: null,
+387 verbose parsed url   search: null,
+387 verbose parsed url   query: null,
+387 verbose parsed url   pathname: '1.4.4',
+387 verbose parsed url   path: '1.4.4',
+387 verbose parsed url   href: '1.4.4' }
+388 verbose addNamed [ 'wrench', '1.4.4' ]
+389 verbose addNamed [ '1.4.4', '1.4.4' ]
+390 silly lockFile 7dc20a40-wrench-1-4-4 wrench@1.4.4
+391 verbose lock wrench@1.4.4 /Users/dylanhassinger/.npm/7dc20a40-wrench-1-4-4.lock
+392 verbose cache add [ 'uglify-js@2.2.4', null ]
+393 verbose cache add name=undefined spec="uglify-js@2.2.4" args=["uglify-js@2.2.4",null]
+394 verbose parsed url { protocol: null,
+394 verbose parsed url   slashes: null,
+394 verbose parsed url   auth: null,
+394 verbose parsed url   host: null,
+394 verbose parsed url   port: null,
+394 verbose parsed url   hostname: null,
+394 verbose parsed url   hash: null,
+394 verbose parsed url   search: null,
+394 verbose parsed url   query: null,
+394 verbose parsed url   pathname: 'uglify-js@2.2.4',
+394 verbose parsed url   path: 'uglify-js@2.2.4',
+394 verbose parsed url   href: 'uglify-js@2.2.4' }
+395 verbose cache add name="uglify-js" spec="2.2.4" args=["uglify-js","2.2.4"]
+396 verbose parsed url { protocol: null,
+396 verbose parsed url   slashes: null,
+396 verbose parsed url   auth: null,
+396 verbose parsed url   host: null,
+396 verbose parsed url   port: null,
+396 verbose parsed url   hostname: null,
+396 verbose parsed url   hash: null,
+396 verbose parsed url   search: null,
+396 verbose parsed url   query: null,
+396 verbose parsed url   pathname: '2.2.4',
+396 verbose parsed url   path: '2.2.4',
+396 verbose parsed url   href: '2.2.4' }
+397 verbose addNamed [ 'uglify-js', '2.2.4' ]
+398 verbose addNamed [ '2.2.4', '2.2.4' ]
+399 silly lockFile 10e02362-uglify-js-2-2-4 uglify-js@2.2.4
+400 verbose lock uglify-js@2.2.4 /Users/dylanhassinger/.npm/10e02362-uglify-js-2-2-4.lock
+401 verbose cache add [ 'asset-rack@2.0.6', null ]
+402 verbose cache add name=undefined spec="asset-rack@2.0.6" args=["asset-rack@2.0.6",null]
+403 verbose parsed url { protocol: null,
+403 verbose parsed url   slashes: null,
+403 verbose parsed url   auth: null,
+403 verbose parsed url   host: null,
+403 verbose parsed url   port: null,
+403 verbose parsed url   hostname: null,
+403 verbose parsed url   hash: null,
+403 verbose parsed url   search: null,
+403 verbose parsed url   query: null,
+403 verbose parsed url   pathname: 'asset-rack@2.0.6',
+403 verbose parsed url   path: 'asset-rack@2.0.6',
+403 verbose parsed url   href: 'asset-rack@2.0.6' }
+404 verbose cache add name="asset-rack" spec="2.0.6" args=["asset-rack","2.0.6"]
+405 verbose parsed url { protocol: null,
+405 verbose parsed url   slashes: null,
+405 verbose parsed url   auth: null,
+405 verbose parsed url   host: null,
+405 verbose parsed url   port: null,
+405 verbose parsed url   hostname: null,
+405 verbose parsed url   hash: null,
+405 verbose parsed url   search: null,
+405 verbose parsed url   query: null,
+405 verbose parsed url   pathname: '2.0.6',
+405 verbose parsed url   path: '2.0.6',
+405 verbose parsed url   href: '2.0.6' }
+406 verbose addNamed [ 'asset-rack', '2.0.6' ]
+407 verbose addNamed [ '2.0.6', '2.0.6' ]
+408 silly lockFile 70c62070-asset-rack-2-0-6 asset-rack@2.0.6
+409 verbose lock asset-rack@2.0.6 /Users/dylanhassinger/.npm/70c62070-asset-rack-2-0-6.lock
+410 verbose cache add [ 'node-uuid@~1.4.0', null ]
+411 verbose cache add name=undefined spec="node-uuid@~1.4.0" args=["node-uuid@~1.4.0",null]
+412 verbose parsed url { protocol: null,
+412 verbose parsed url   slashes: null,
+412 verbose parsed url   auth: null,
+412 verbose parsed url   host: null,
+412 verbose parsed url   port: null,
+412 verbose parsed url   hostname: null,
+412 verbose parsed url   hash: null,
+412 verbose parsed url   search: null,
+412 verbose parsed url   query: null,
+412 verbose parsed url   pathname: 'node-uuid@~1.4.0',
+412 verbose parsed url   path: 'node-uuid@~1.4.0',
+412 verbose parsed url   href: 'node-uuid@~1.4.0' }
+413 verbose cache add name="node-uuid" spec="~1.4.0" args=["node-uuid","~1.4.0"]
+414 verbose parsed url { protocol: null,
+414 verbose parsed url   slashes: null,
+414 verbose parsed url   auth: null,
+414 verbose parsed url   host: null,
+414 verbose parsed url   port: null,
+414 verbose parsed url   hostname: null,
+414 verbose parsed url   hash: null,
+414 verbose parsed url   search: null,
+414 verbose parsed url   query: null,
+414 verbose parsed url   pathname: '~1.4.0',
+414 verbose parsed url   path: '~1.4.0',
+414 verbose parsed url   href: '~1.4.0' }
+415 verbose addNamed [ 'node-uuid', '~1.4.0' ]
+416 verbose addNamed [ null, '>=1.4.0- <1.5.0-' ]
+417 silly lockFile f662725f-node-uuid-1-4-0 node-uuid@~1.4.0
+418 verbose lock node-uuid@~1.4.0 /Users/dylanhassinger/.npm/f662725f-node-uuid-1-4-0.lock
+419 verbose cache add [ 'parley@0.0.2', null ]
+420 verbose cache add name=undefined spec="parley@0.0.2" args=["parley@0.0.2",null]
+421 verbose parsed url { protocol: null,
+421 verbose parsed url   slashes: null,
+421 verbose parsed url   auth: null,
+421 verbose parsed url   host: null,
+421 verbose parsed url   port: null,
+421 verbose parsed url   hostname: null,
+421 verbose parsed url   hash: null,
+421 verbose parsed url   search: null,
+421 verbose parsed url   query: null,
+421 verbose parsed url   pathname: 'parley@0.0.2',
+421 verbose parsed url   path: 'parley@0.0.2',
+421 verbose parsed url   href: 'parley@0.0.2' }
+422 verbose cache add name="parley" spec="0.0.2" args=["parley","0.0.2"]
+423 verbose parsed url { protocol: null,
+423 verbose parsed url   slashes: null,
+423 verbose parsed url   auth: null,
+423 verbose parsed url   host: null,
+423 verbose parsed url   port: null,
+423 verbose parsed url   hostname: null,
+423 verbose parsed url   hash: null,
+423 verbose parsed url   search: null,
+423 verbose parsed url   query: null,
+423 verbose parsed url   pathname: '0.0.2',
+423 verbose parsed url   path: '0.0.2',
+423 verbose parsed url   href: '0.0.2' }
+424 verbose addNamed [ 'parley', '0.0.2' ]
+425 verbose addNamed [ '0.0.2', '0.0.2' ]
+426 silly lockFile ec3c5f06-parley-0-0-2 parley@0.0.2
+427 verbose lock parley@0.0.2 /Users/dylanhassinger/.npm/ec3c5f06-parley-0-0-2.lock
+428 verbose cache add [ 'include-all@0.0.5', null ]
+429 verbose cache add name=undefined spec="include-all@0.0.5" args=["include-all@0.0.5",null]
+430 verbose parsed url { protocol: null,
+430 verbose parsed url   slashes: null,
+430 verbose parsed url   auth: null,
+430 verbose parsed url   host: null,
+430 verbose parsed url   port: null,
+430 verbose parsed url   hostname: null,
+430 verbose parsed url   hash: null,
+430 verbose parsed url   search: null,
+430 verbose parsed url   query: null,
+430 verbose parsed url   pathname: 'include-all@0.0.5',
+430 verbose parsed url   path: 'include-all@0.0.5',
+430 verbose parsed url   href: 'include-all@0.0.5' }
+431 verbose cache add name="include-all" spec="0.0.5" args=["include-all","0.0.5"]
+432 verbose parsed url { protocol: null,
+432 verbose parsed url   slashes: null,
+432 verbose parsed url   auth: null,
+432 verbose parsed url   host: null,
+432 verbose parsed url   port: null,
+432 verbose parsed url   hostname: null,
+432 verbose parsed url   hash: null,
+432 verbose parsed url   search: null,
+432 verbose parsed url   query: null,
+432 verbose parsed url   pathname: '0.0.5',
+432 verbose parsed url   path: '0.0.5',
+432 verbose parsed url   href: '0.0.5' }
+433 verbose addNamed [ 'include-all', '0.0.5' ]
+434 verbose addNamed [ '0.0.5', '0.0.5' ]
+435 silly lockFile 29927fc1-include-all-0-0-5 include-all@0.0.5
+436 verbose lock include-all@0.0.5 /Users/dylanhassinger/.npm/29927fc1-include-all-0-0-5.lock
+437 verbose cache add [ 'forever@~0.10.0', null ]
+438 verbose cache add name=undefined spec="forever@~0.10.0" args=["forever@~0.10.0",null]
+439 verbose parsed url { protocol: null,
+439 verbose parsed url   slashes: null,
+439 verbose parsed url   auth: null,
+439 verbose parsed url   host: null,
+439 verbose parsed url   port: null,
+439 verbose parsed url   hostname: null,
+439 verbose parsed url   hash: null,
+439 verbose parsed url   search: null,
+439 verbose parsed url   query: null,
+439 verbose parsed url   pathname: 'forever@~0.10.0',
+439 verbose parsed url   path: 'forever@~0.10.0',
+439 verbose parsed url   href: 'forever@~0.10.0' }
+440 verbose cache add name="forever" spec="~0.10.0" args=["forever","~0.10.0"]
+441 verbose parsed url { protocol: null,
+441 verbose parsed url   slashes: null,
+441 verbose parsed url   auth: null,
+441 verbose parsed url   host: null,
+441 verbose parsed url   port: null,
+441 verbose parsed url   hostname: null,
+441 verbose parsed url   hash: null,
+441 verbose parsed url   search: null,
+441 verbose parsed url   query: null,
+441 verbose parsed url   pathname: '~0.10.0',
+441 verbose parsed url   path: '~0.10.0',
+441 verbose parsed url   href: '~0.10.0' }
+442 verbose addNamed [ 'forever', '~0.10.0' ]
+443 verbose addNamed [ null, '>=0.10.0- <0.11.0-' ]
+444 silly lockFile 18097883-forever-0-10-0 forever@~0.10.0
+445 verbose lock forever@~0.10.0 /Users/dylanhassinger/.npm/18097883-forever-0-10-0.lock
+446 verbose cache add [ 'clean-css@0.10.1', null ]
+447 verbose cache add name=undefined spec="clean-css@0.10.1" args=["clean-css@0.10.1",null]
+448 verbose parsed url { protocol: null,
+448 verbose parsed url   slashes: null,
+448 verbose parsed url   auth: null,
+448 verbose parsed url   host: null,
+448 verbose parsed url   port: null,
+448 verbose parsed url   hostname: null,
+448 verbose parsed url   hash: null,
+448 verbose parsed url   search: null,
+448 verbose parsed url   query: null,
+448 verbose parsed url   pathname: 'clean-css@0.10.1',
+448 verbose parsed url   path: 'clean-css@0.10.1',
+448 verbose parsed url   href: 'clean-css@0.10.1' }
+449 verbose cache add name="clean-css" spec="0.10.1" args=["clean-css","0.10.1"]
+450 verbose parsed url { protocol: null,
+450 verbose parsed url   slashes: null,
+450 verbose parsed url   auth: null,
+450 verbose parsed url   host: null,
+450 verbose parsed url   port: null,
+450 verbose parsed url   hostname: null,
+450 verbose parsed url   hash: null,
+450 verbose parsed url   search: null,
+450 verbose parsed url   query: null,
+450 verbose parsed url   pathname: '0.10.1',
+450 verbose parsed url   path: '0.10.1',
+450 verbose parsed url   href: '0.10.1' }
+451 verbose addNamed [ 'clean-css', '0.10.1' ]
+452 verbose addNamed [ '0.10.1', '0.10.1' ]
+453 silly lockFile 977ff9a1-clean-css-0-10-1 clean-css@0.10.1
+454 verbose lock clean-css@0.10.1 /Users/dylanhassinger/.npm/977ff9a1-clean-css-0-10-1.lock
+455 verbose cache add [ 'fs-watch-tree@~0.2.2', null ]
+456 verbose cache add name=undefined spec="fs-watch-tree@~0.2.2" args=["fs-watch-tree@~0.2.2",null]
+457 verbose parsed url { protocol: null,
+457 verbose parsed url   slashes: null,
+457 verbose parsed url   auth: null,
+457 verbose parsed url   host: null,
+457 verbose parsed url   port: null,
+457 verbose parsed url   hostname: null,
+457 verbose parsed url   hash: null,
+457 verbose parsed url   search: null,
+457 verbose parsed url   query: null,
+457 verbose parsed url   pathname: 'fs-watch-tree@~0.2.2',
+457 verbose parsed url   path: 'fs-watch-tree@~0.2.2',
+457 verbose parsed url   href: 'fs-watch-tree@~0.2.2' }
+458 verbose cache add name="fs-watch-tree" spec="~0.2.2" args=["fs-watch-tree","~0.2.2"]
+459 verbose parsed url { protocol: null,
+459 verbose parsed url   slashes: null,
+459 verbose parsed url   auth: null,
+459 verbose parsed url   host: null,
+459 verbose parsed url   port: null,
+459 verbose parsed url   hostname: null,
+459 verbose parsed url   hash: null,
+459 verbose parsed url   search: null,
+459 verbose parsed url   query: null,
+459 verbose parsed url   pathname: '~0.2.2',
+459 verbose parsed url   path: '~0.2.2',
+459 verbose parsed url   href: '~0.2.2' }
+460 verbose addNamed [ 'fs-watch-tree', '~0.2.2' ]
+461 verbose addNamed [ null, '>=0.2.2- <0.3.0-' ]
+462 silly lockFile f7a60321-fs-watch-tree-0-2-2 fs-watch-tree@~0.2.2
+463 verbose lock fs-watch-tree@~0.2.2 /Users/dylanhassinger/.npm/f7a60321-fs-watch-tree-0-2-2.lock
+464 verbose cache add [ 'jade@0.28.0', null ]
+465 verbose cache add name=undefined spec="jade@0.28.0" args=["jade@0.28.0",null]
+466 verbose parsed url { protocol: null,
+466 verbose parsed url   slashes: null,
+466 verbose parsed url   auth: null,
+466 verbose parsed url   host: null,
+466 verbose parsed url   port: null,
+466 verbose parsed url   hostname: null,
+466 verbose parsed url   hash: null,
+466 verbose parsed url   search: null,
+466 verbose parsed url   query: null,
+466 verbose parsed url   pathname: 'jade@0.28.0',
+466 verbose parsed url   path: 'jade@0.28.0',
+466 verbose parsed url   href: 'jade@0.28.0' }
+467 verbose cache add name="jade" spec="0.28.0" args=["jade","0.28.0"]
+468 verbose parsed url { protocol: null,
+468 verbose parsed url   slashes: null,
+468 verbose parsed url   auth: null,
+468 verbose parsed url   host: null,
+468 verbose parsed url   port: null,
+468 verbose parsed url   hostname: null,
+468 verbose parsed url   hash: null,
+468 verbose parsed url   search: null,
+468 verbose parsed url   query: null,
+468 verbose parsed url   pathname: '0.28.0',
+468 verbose parsed url   path: '0.28.0',
+468 verbose parsed url   href: '0.28.0' }
+469 verbose addNamed [ 'jade', '0.28.0' ]
+470 verbose addNamed [ '0.28.0', '0.28.0' ]
+471 silly lockFile f651fc5a-jade-0-28-0 jade@0.28.0
+472 verbose lock jade@0.28.0 /Users/dylanhassinger/.npm/f651fc5a-jade-0-28-0.lock
+473 verbose cache add [ 'sails-dirty@0.7.2', null ]
+474 verbose cache add name=undefined spec="sails-dirty@0.7.2" args=["sails-dirty@0.7.2",null]
+475 verbose parsed url { protocol: null,
+475 verbose parsed url   slashes: null,
+475 verbose parsed url   auth: null,
+475 verbose parsed url   host: null,
+475 verbose parsed url   port: null,
+475 verbose parsed url   hostname: null,
+475 verbose parsed url   hash: null,
+475 verbose parsed url   search: null,
+475 verbose parsed url   query: null,
+475 verbose parsed url   pathname: 'sails-dirty@0.7.2',
+475 verbose parsed url   path: 'sails-dirty@0.7.2',
+475 verbose parsed url   href: 'sails-dirty@0.7.2' }
+476 verbose cache add name="sails-dirty" spec="0.7.2" args=["sails-dirty","0.7.2"]
+477 verbose parsed url { protocol: null,
+477 verbose parsed url   slashes: null,
+477 verbose parsed url   auth: null,
+477 verbose parsed url   host: null,
+477 verbose parsed url   port: null,
+477 verbose parsed url   hostname: null,
+477 verbose parsed url   hash: null,
+477 verbose parsed url   search: null,
+477 verbose parsed url   query: null,
+477 verbose parsed url   pathname: '0.7.2',
+477 verbose parsed url   path: '0.7.2',
+477 verbose parsed url   href: '0.7.2' }
+478 verbose addNamed [ 'sails-dirty', '0.7.2' ]
+479 verbose addNamed [ '0.7.2', '0.7.2' ]
+480 silly lockFile 7f1ec467-sails-dirty-0-7-2 sails-dirty@0.7.2
+481 verbose lock sails-dirty@0.7.2 /Users/dylanhassinger/.npm/7f1ec467-sails-dirty-0-7-2.lock
+482 verbose cache add [ 'express@2.5.11', null ]
+483 verbose cache add name=undefined spec="express@2.5.11" args=["express@2.5.11",null]
+484 verbose parsed url { protocol: null,
+484 verbose parsed url   slashes: null,
+484 verbose parsed url   auth: null,
+484 verbose parsed url   host: null,
+484 verbose parsed url   port: null,
+484 verbose parsed url   hostname: null,
+484 verbose parsed url   hash: null,
+484 verbose parsed url   search: null,
+484 verbose parsed url   query: null,
+484 verbose parsed url   pathname: 'express@2.5.11',
+484 verbose parsed url   path: 'express@2.5.11',
+484 verbose parsed url   href: 'express@2.5.11' }
+485 verbose cache add name="express" spec="2.5.11" args=["express","2.5.11"]
+486 verbose parsed url { protocol: null,
+486 verbose parsed url   slashes: null,
+486 verbose parsed url   auth: null,
+486 verbose parsed url   host: null,
+486 verbose parsed url   port: null,
+486 verbose parsed url   hostname: null,
+486 verbose parsed url   hash: null,
+486 verbose parsed url   search: null,
+486 verbose parsed url   query: null,
+486 verbose parsed url   pathname: '2.5.11',
+486 verbose parsed url   path: '2.5.11',
+486 verbose parsed url   href: '2.5.11' }
+487 verbose addNamed [ 'express', '2.5.11' ]
+488 verbose addNamed [ '2.5.11', '2.5.11' ]
+489 silly lockFile 631042f2-express-2-5-11 express@2.5.11
+490 verbose lock express@2.5.11 /Users/dylanhassinger/.npm/631042f2-express-2-5-11.lock
+491 silly addNameRange { name: 'node-uuid', range: '>=1.4.0- <1.5.0-', hasData: false }
+492 silly addNameRange { name: 'fs-watch-tree',
+492 silly addNameRange   range: '>=0.2.2- <0.3.0-',
+492 silly addNameRange   hasData: false }
+493 silly addNameRange { name: 'forever', range: '>=0.10.0- <0.11.0-', hasData: false }
+494 verbose url raw connect/1.8.3
+495 verbose url resolving [ 'https://registry.npmjs.org/', './connect/1.8.3' ]
+496 verbose url resolved https://registry.npmjs.org/connect/1.8.3
+497 info trying registry request attempt 1 at 04:02:23
+498 verbose etag "4T09H5ITWU60U94S7V5NN8IIU"
+499 http GET https://registry.npmjs.org/connect/1.8.3
+500 verbose url raw ejs/0.7.2
+501 verbose url resolving [ 'https://registry.npmjs.org/', './ejs/0.7.2' ]
+502 verbose url resolved https://registry.npmjs.org/ejs/0.7.2
+503 info trying registry request attempt 1 at 04:02:23
+504 verbose etag "BQU2U6CGON6SWDLK1868EP1P5"
+505 http GET https://registry.npmjs.org/ejs/0.7.2
+506 verbose url raw underscore/1.4.2
+507 verbose url resolving [ 'https://registry.npmjs.org/', './underscore/1.4.2' ]
+508 verbose url resolved https://registry.npmjs.org/underscore/1.4.2
+509 info trying registry request attempt 1 at 04:02:23
+510 verbose etag "DBHCWLRLF5LX7HJF7D8M2HNFO"
+511 http GET https://registry.npmjs.org/underscore/1.4.2
+512 verbose url raw socket.io/0.9.6
+513 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io/0.9.6' ]
+514 verbose url resolved https://registry.npmjs.org/socket.io/0.9.6
+515 info trying registry request attempt 1 at 04:02:23
+516 verbose etag "1QK4TWFT6D5B0CCDMOVB9HF4O"
+517 http GET https://registry.npmjs.org/socket.io/0.9.6
+518 verbose url raw async/0.1.22
+519 verbose url resolving [ 'https://registry.npmjs.org/', './async/0.1.22' ]
+520 verbose url resolved https://registry.npmjs.org/async/0.1.22
+521 info trying registry request attempt 1 at 04:02:23
+522 verbose etag "954GS68Y5CSF9LY8T6LGBHXTK"
+523 http GET https://registry.npmjs.org/async/0.1.22
+524 verbose url raw optimist/0.3.4
+525 verbose url resolving [ 'https://registry.npmjs.org/', './optimist/0.3.4' ]
+526 verbose url resolved https://registry.npmjs.org/optimist/0.3.4
+527 info trying registry request attempt 1 at 04:02:23
+528 verbose etag "3QHOTMRFUIGHSKT15VPIKGY6B"
+529 http GET https://registry.npmjs.org/optimist/0.3.4
+530 verbose url raw i18n/0.3.5
+531 verbose url resolving [ 'https://registry.npmjs.org/', './i18n/0.3.5' ]
+532 verbose url resolved https://registry.npmjs.org/i18n/0.3.5
+533 info trying registry request attempt 1 at 04:02:23
+534 verbose etag "44U31DS687LOJ2FFOCTTNW908"
+535 http GET https://registry.npmjs.org/i18n/0.3.5
+536 verbose url raw uglify-js/2.2.4
+537 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js/2.2.4' ]
+538 verbose url resolved https://registry.npmjs.org/uglify-js/2.2.4
+539 info trying registry request attempt 1 at 04:02:23
+540 verbose etag "8JONIH8LDZOVH1GBB3VJZZLL6"
+541 http GET https://registry.npmjs.org/uglify-js/2.2.4
+542 verbose url raw less/1.3.0
+543 verbose url resolving [ 'https://registry.npmjs.org/', './less/1.3.0' ]
+544 verbose url resolved https://registry.npmjs.org/less/1.3.0
+545 info trying registry request attempt 1 at 04:02:23
+546 verbose etag "7VRPKXVNYV6LEJYOT2QZBGQ8C"
+547 http GET https://registry.npmjs.org/less/1.3.0
+548 verbose url raw wrench/1.4.4
+549 verbose url resolving [ 'https://registry.npmjs.org/', './wrench/1.4.4' ]
+550 verbose url resolved https://registry.npmjs.org/wrench/1.4.4
+551 info trying registry request attempt 1 at 04:02:23
+552 verbose etag "CKX1QRPK1WKXDF1LEIJ1W8LJJ"
+553 http GET https://registry.npmjs.org/wrench/1.4.4
+554 verbose url raw parley/0.0.2
+555 verbose url resolving [ 'https://registry.npmjs.org/', './parley/0.0.2' ]
+556 verbose url resolved https://registry.npmjs.org/parley/0.0.2
+557 info trying registry request attempt 1 at 04:02:23
+558 verbose etag "54SGXM0LJGVFEVM397EL37E0M"
+559 http GET https://registry.npmjs.org/parley/0.0.2
+560 verbose url raw fs-extra/0.5.0
+561 verbose url resolving [ 'https://registry.npmjs.org/', './fs-extra/0.5.0' ]
+562 verbose url resolved https://registry.npmjs.org/fs-extra/0.5.0
+563 info trying registry request attempt 1 at 04:02:23
+564 verbose etag "F4MH6FGSWT66Y7D049M9665TU"
+565 http GET https://registry.npmjs.org/fs-extra/0.5.0
+566 verbose url raw glob/3.1.14
+567 verbose url resolving [ 'https://registry.npmjs.org/', './glob/3.1.14' ]
+568 verbose url resolved https://registry.npmjs.org/glob/3.1.14
+569 info trying registry request attempt 1 at 04:02:23
+570 verbose etag "16G2KH7KNJOCMC8RHG2MW96M1"
+571 http GET https://registry.npmjs.org/glob/3.1.14
+572 verbose url raw clean-css/0.10.1
+573 verbose url resolving [ 'https://registry.npmjs.org/', './clean-css/0.10.1' ]
+574 verbose url resolved https://registry.npmjs.org/clean-css/0.10.1
+575 info trying registry request attempt 1 at 04:02:23
+576 verbose etag "CN69I544JC24WEX28RWSJ3F8H"
+577 http GET https://registry.npmjs.org/clean-css/0.10.1
+578 verbose url raw fs-watch-tree
+579 verbose url resolving [ 'https://registry.npmjs.org/', './fs-watch-tree' ]
+580 verbose url resolved https://registry.npmjs.org/fs-watch-tree
+581 info trying registry request attempt 1 at 04:02:23
+582 verbose etag "6NLW1Y5181FZPQ5FJ1BMVYOFH"
+583 http GET https://registry.npmjs.org/fs-watch-tree
+584 verbose url raw jade/0.28.0
+585 verbose url resolving [ 'https://registry.npmjs.org/', './jade/0.28.0' ]
+586 verbose url resolved https://registry.npmjs.org/jade/0.28.0
+587 info trying registry request attempt 1 at 04:02:23
+588 verbose etag "4H9XO6014G8SDDA05TMRXEP4R"
+589 http GET https://registry.npmjs.org/jade/0.28.0
+590 verbose url raw express/2.5.11
+591 verbose url resolving [ 'https://registry.npmjs.org/', './express/2.5.11' ]
+592 verbose url resolved https://registry.npmjs.org/express/2.5.11
+593 info trying registry request attempt 1 at 04:02:23
+594 verbose etag "KZ2ROZBY3GIF0T61WQBHWGXH"
+595 http GET https://registry.npmjs.org/express/2.5.11
+596 verbose url raw sails-dirty/0.7.2
+597 verbose url resolving [ 'https://registry.npmjs.org/', './sails-dirty/0.7.2' ]
+598 verbose url resolved https://registry.npmjs.org/sails-dirty/0.7.2
+599 info trying registry request attempt 1 at 04:02:23
+600 verbose etag "542T75EF8FGMM5AUYAWRLCKKG"
+601 http GET https://registry.npmjs.org/sails-dirty/0.7.2
+602 verbose url raw node-uuid
+603 verbose url resolving [ 'https://registry.npmjs.org/', './node-uuid' ]
+604 verbose url resolved https://registry.npmjs.org/node-uuid
+605 info trying registry request attempt 1 at 04:02:23
+606 verbose etag "51E0TZTQAI520ZOXN9PSYZU94"
+607 http GET https://registry.npmjs.org/node-uuid
+608 verbose url raw asset-rack/2.0.6
+609 verbose url resolving [ 'https://registry.npmjs.org/', './asset-rack/2.0.6' ]
+610 verbose url resolved https://registry.npmjs.org/asset-rack/2.0.6
+611 info trying registry request attempt 1 at 04:02:23
+612 verbose etag "BAJKVI90B3L2NI7NLGG6QZATV"
+613 http GET https://registry.npmjs.org/asset-rack/2.0.6
+614 verbose url raw winston/0.6.2
+615 verbose url resolving [ 'https://registry.npmjs.org/', './winston/0.6.2' ]
+616 verbose url resolved https://registry.npmjs.org/winston/0.6.2
+617 info trying registry request attempt 1 at 04:02:23
+618 verbose etag "BIMVO5ZSMSXZ32ZF5WNXS6OJ"
+619 http GET https://registry.npmjs.org/winston/0.6.2
+620 verbose url raw underscore.string/2.3.0
+621 verbose url resolving [ 'https://registry.npmjs.org/', './underscore.string/2.3.0' ]
+622 verbose url resolved https://registry.npmjs.org/underscore.string/2.3.0
+623 info trying registry request attempt 1 at 04:02:23
+624 verbose etag "87O93SJFB1N7EAEJ3RTXRA46P"
+625 http GET https://registry.npmjs.org/underscore.string/2.3.0
+626 verbose url raw include-all/0.0.5
+627 verbose url resolving [ 'https://registry.npmjs.org/', './include-all/0.0.5' ]
+628 verbose url resolved https://registry.npmjs.org/include-all/0.0.5
+629 info trying registry request attempt 1 at 04:02:23
+630 verbose etag "EAQ1J6XF3X9V14UGPOXVDUNC8"
+631 http GET https://registry.npmjs.org/include-all/0.0.5
+632 verbose url raw forever
+633 verbose url resolving [ 'https://registry.npmjs.org/', './forever' ]
+634 verbose url resolved https://registry.npmjs.org/forever
+635 info trying registry request attempt 1 at 04:02:23
+636 verbose etag "7MA6HK06W4IAWEXTSBTGJI4CF"
+637 http GET https://registry.npmjs.org/forever
+638 http 304 https://registry.npmjs.org/jam/0.4.3-0
+639 silly registry.get cb [ 304,
+639 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+639 silly registry.get     etag: '"YREC6OQC9SQDPYP1Z69PLB2O"',
+639 silly registry.get     date: 'Fri, 29 Mar 2013 09:02:23 GMT',
+639 silly registry.get     'content-length': '0' } ]
+640 verbose etag jam/0.4.3-0 from cache
+641 verbose from cache /Users/dylanhassinger/.npm/jam/0.4.3-0/package/package.json
+642 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+643 silly lockFile 40940a7f-jam-0-4-3-0 jam@0.4.3-0
+644 silly resolved [ { name: 'jam',
+644 silly resolved     version: '0.4.3-0',
+644 silly resolved     description: 'JAM your async calls together *faster*',
+644 silly resolved     main: 'index.js',
+644 silly resolved     scripts: { test: 'make test' },
+644 silly resolved     repository: { type: 'git', url: 'git://github.com/chakrit/jam.git' },
+644 silly resolved     keywords: [ 'jam', 'async', 'monad', 'concurrent', 'parallel' ],
+644 silly resolved     author:
+644 silly resolved      { name: 'Chakrit Wichian',
+644 silly resolved        email: 'service@chakrit.net',
+644 silly resolved        url: 'http://chakrit.net' },
+644 silly resolved     license: 'BSD',
+644 silly resolved     readmeFilename: 'README.md',
+644 silly resolved     directories: { test: 'test', lib: 'lib' },
+644 silly resolved     devDependencies:
+644 silly resolved      { istanbul: '~0.1.27',
+644 silly resolved        'mocha-istanbul': '~0.1.0',
+644 silly resolved        mocha: '~1.8.1',
+644 silly resolved        plato: '~0.4.3',
+644 silly resolved        chai: '~1.4.2',
+644 silly resolved        sinon: '~1.5.2',
+644 silly resolved        groc: '~0.3.2' },
+644 silly resolved     readme: '[![Build Status](https://travis-ci.org/chakrit/jam.png?branch=master)](https://travis-ci.org/chakrit/jam)\n\n# JAM JAM JAM\n\n```sh\n$ npm install jam --save\n```\n\nJAM is another kind of async framework that tries to have as minimum boilerplate code as\npossible with sensible defaults. (Or as sensible as I can make it; PR and ideas welcome.)\n\nJAM wants you to get right in to building your `async` chain as soon as possible.\n\nJAM also aims to bundle with itself some "combinators" (or just "helpers") which helps you\nmanipulate arguments and functions that are being passed around in the chain with ease.\nThere is only a handful of them right now, but I will add more whenever I see a good use\nfor one.\n\n# HOW TO\n\nJAM functions must accept a `next` argument first thing which you should call as soon as\nyour asynchronous processing is done:\n\nLet\'s start with the simplest possible invocation of jam:\n\n```js\nvar chain = jam( function(next) { next(); } );\n```\n\n**JAM will starts executing your chain as soon as `nextTick`.** So, in the event loop time\nyou have been allocated, you can add as many methods as you like and the chain will start\nexecuting as soon your loop finishes. No more steps necessary!\n\nYou may think that this poses a problem but I find that most (if not all) of the cases\nwhere you want to do multiple asynchronous calls, you will build all your calls in a\nsingle run loop. So this is a non-issue.\n\nTo add a method to the chain, simply invoke the result from the last JAM invocation as a\nfunction like this:\n\n```js\nchain = chain( function secondStep(next) { next(); } );\n```\n\nJAM expects most asynchronous method calls to be executed serially so that is what the\nchain does by default when you start adding methods to the chain.\n\nSince JAM return values are just functions, you don\'t even need to hold it in a variable\nif you like extra brevity of code:\n\n```js\njam( function firstStep(next)  { next(); } )\n  (  function secondStep(next) { next(); } )\n  (  function lastStep()       { } );\n```\n\nJAM also handles `Error`s for you. Note:\n\n* The convention here is that the last function in the chain is often the one that will\n  handle all errors in the chain.\n* The last function does not need any more `next()` since it\'s the last one.\n\nJAM convention utilizes the two facts above to pass any `Error` that happens in the chain\nto the last function as first argument.\n\nSo if you need error handling, write the last function as a standard node.js callback:\n\n```js\njam(function erroneous(next) {\n    next(new Error(\'naw!\');\n  })\n  (function handler(err) {\n    if (err) { console.log(err.stack); }\n  });\n```\n\nAdditionally, JAM also passes anything else given to the `next()` function to the next one\nas arguments as well so you can do this:\n\n```js\njam(function(next) { fs.readFile(\'filename.txt\', next); })\n  (function(next, data) {\n    console.log("FILE DATA:\\r\\n" + data);\n  });\n```\n\nThis is much better than if JAM put `next()` as the last argument since some functions\ncalls your `callback` with more arguments than you need (or aware of) thus making your\ncode dependent on the number of arguments given.\n\nPassing `next` as first argument eliminates the dependency since you can bind as many\narguments as you want and the `next()` is still passed as first argument always.\n\nAdditionally, there are helpers available that lets you build JAM chains more easily.\n\n# HELPERS\n\nThis is just a quick list to give you some ideas. More documentation on helpers are\navailable with with the [annotated source of jam.js](http://gh.chakrit.net/jam/).\n\nOr feel free to ping me [@chakrit](http://twitter.com/chakrit) on Twitter or open a GH\nissue for questions.\n\n#### identity( )\n\n```js\njam(function first(next) { next(\'one\'); })\n  (jam.identity)\n  (function second(err, arg) {\n    assert(arg === \'one\'); // passese\n  });\n```\n\nPasses arguments it receives to the next function in the chain without any modification.\nAlso useful as a starting point when building a complex jam chain (i.e. in a for loops\nthat re-uses the jam return values.)\n\nSee `nextTick()` below.\n\n#### nextTick( )\n\n```js\njam( function firstStep(next) { next(); } )\n  ( jam.nextTick )\n  ( function badSecondStep(next) { next(); } );\n```\n\nExcept for the first invocation, JAM chains are executed synchronously one after another\nas soon as you call `next()`. This may pose a problem for some code that does not expect\nasynchronous functions to execute immeditaely.\n\nThis function fixes this case by inserting a nextTick() in-between the call chain to make\nsure it executes on `process.nextTick`.\n\nThis function is actually just an alias for `.identity`\n\n#### return( [args...] )\n\n```js\nfunction handleFileContent(e, file) {\n};\n\n// parallel handleFileContent jam\n[\'file1.txt\', \'file2.txt\', \'file3.txt\'].forEach(function(file) {\n  jam(jam.return(file))\n    (jam.call(fs.readFile)) // no function() needed!\n    (handleFileContent);\n});\n```\n\nThis allows you to provide arguments to the next function in the chain (or for starting\nit) without modifying or wrapping code for the rest of the chains.\n\n#### call( func, [args...] )\n\n```js\njam(jam.call(findTheRightFile))\n  (jam.call(fs.readFile))\n  (function(e, fileContent) {\n    // fileContent is the content of the right file\n  });\n```\n\nThis helper lets you call standard node.js functions that expect callbacks at the end.\nAdditionally, any arguments that would normally be given to the chain function would be\nused to call the function instead (`next()` is then added at the end of the arguments\nlist).\n\n#### map( array, iterator( next, element, index ) )\n\n```js\nvar FILES = \'file1.txt,file2.txt,file3.txt\'.split(\',\')\n  , cat = \'\';\n\njam(jam.map(FILES, function(next, file) {\n  fs.readFile(file, function(e, fileContent) {\n    cat += fileContent\n    next();\n  });\n\n})(function(e) { console.log(cat); });\n```\n\nRuns the `iterator` for each element in the array. The `iterator` is given its own version\nof `next()` and the element to process.\n\nInternally a new JAM chain is built and a chain step is added for each element.\n\n# LICENSE\n\nBSD\n\n# SUPPORT / CONTRIBUTE\n\nPull requests and/or ideas welcome.\n\nPlease open a [new GitHub Issue](https://github.com/chakrit/jam/issues/new) for any bugs\nyou find or if you just had a question.\n\n#### TODOs\n\n* Binded calls. Something like `jam.method(object, \'func\')` that works like `jam.call`.\n* Nullify calls, in case you don\'t want any arguments passed.\n* Parellel map() ?\n\n# WHY ?\n\nShort answer: Because the existing ones are so cumbersome to use that I just had enough\nwith it.\n\nYeah, I know there\'re tons of other continuation helpers out there already but there\nreally isn\'t one where you could quickly just type-in the list of stuff to do and be done\nwith it without worrying about forgetting to close the list with that final parenthesis or\nforgetting to add a comma. And yeah, IMO it is wayyy easier to just add a\n`(function() { })` block at the end because that\'s what you\'re usually doing all the time\nanyway taking care of all those JS variable scopes. Plus it is easier to\ncopy/paste/reorder the steps as well.\n\nAnother thing is that most of the libraries try to provide you with a lot of powerful way\nto run asynchronous functions where most of the time you just want to reduce the amount of\nnesting in your code.\n\nSo my idea is that the interface should be really minimal using the most common case with\nsane defaults and then provide helpers for bringing edge cases into this minimal interface\nneatly so you can just get your stuff done without worrying about wether you are using the\nright async call or if you have the right number of arguments.\n\nSo I decided, WTH, I had enough and I could just write one.\n\nAnd you gotta admit, writing all these stuff is just god damned *fun*! XD\n\n',
+644 silly resolved     _id: 'jam@0.4.3-0',
+644 silly resolved     _from: 'jam@0.4.3-0' } ]
+645 info install jam@0.4.3-0 into /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase
+646 info installOne jam@0.4.3-0
+647 verbose from cache /Users/dylanhassinger/.npm/jam/0.4.3-0/package/package.json
+648 info /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam unbuild
+649 verbose read json /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+650 verbose tar unpack /Users/dylanhassinger/.npm/jam/0.4.3-0/package.tgz
+651 silly lockFile 334445a2-us-100-codebase-node-modules-jam /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam
+652 verbose lock /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam /Users/dylanhassinger/.npm/334445a2-us-100-codebase-node-modules-jam.lock
+653 silly lockFile cb58c483-nger-npm-jam-0-4-3-0-package-tgz /Users/dylanhassinger/.npm/jam/0.4.3-0/package.tgz
+654 verbose lock /Users/dylanhassinger/.npm/jam/0.4.3-0/package.tgz /Users/dylanhassinger/.npm/cb58c483-nger-npm-jam-0-4-3-0-package-tgz.lock
+655 silly gunzTarPerm modes [ '755', '644' ]
+656 silly gunzTarPerm extractEntry package.json
+657 silly gunzTarPerm extractEntry .npmignore
+658 silly gunzTarPerm extractEntry README.md
+659 silly gunzTarPerm extractEntry index.js
+660 silly gunzTarPerm extractEntry .travis.yml
+661 silly gunzTarPerm extractEntry Makefile
+662 silly gunzTarPerm extractEntry lib/jam.js
+663 silly gunzTarPerm extractEntry test/helpers.js
+664 silly gunzTarPerm extractEntry test/jam.js
+665 verbose read json /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+666 silly lockFile 334445a2-us-100-codebase-node-modules-jam /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam
+667 silly lockFile 334445a2-us-100-codebase-node-modules-jam /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam
+668 silly lockFile cb58c483-nger-npm-jam-0-4-3-0-package-tgz /Users/dylanhassinger/.npm/jam/0.4.3-0/package.tgz
+669 silly lockFile cb58c483-nger-npm-jam-0-4-3-0-package-tgz /Users/dylanhassinger/.npm/jam/0.4.3-0/package.tgz
+670 info preinstall jam@0.4.3-0
+671 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+672 verbose readDependencies using package.json deps
+673 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+674 verbose readDependencies using package.json deps
+675 silly resolved []
+676 verbose about to build /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam
+677 info build /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam
+678 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+679 verbose linkStuff [ false,
+679 verbose linkStuff   false,
+679 verbose linkStuff   false,
+679 verbose linkStuff   '/DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules' ]
+680 info linkStuff jam@0.4.3-0
+681 verbose linkBins jam@0.4.3-0
+682 verbose linkMans jam@0.4.3-0
+683 verbose rebuildBundles jam@0.4.3-0
+684 info install jam@0.4.3-0
+685 info postinstall jam@0.4.3-0
+686 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/package.json
+687 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/jam/package.json
+688 verbose from cache /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase/node_modules/sails/package.json
+689 verbose readInstalled returning sails@0.8.894
+690 verbose readInstalled returning jam@0.4.3-0
+691 error TypeError: Cannot read property 'dependencies' of null
+691 error     at findUnmet (/usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:262:36)
+691 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:247:5
+691 error     at Array.forEach (native)
+691 error     at resolveInheritance (/usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:246:33)
+691 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:117:5
+691 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:232:14
+691 error     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:48:11)
+691 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:232:14
+691 error     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:27:18)
+691 error     at next (/usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:198:5)
+692 error If you need help, you may report this log at:
+692 error     <http://github.com/isaacs/npm/issues>
+692 error or email it to:
+692 error     <npm-@googlegroups.com>
+693 error System Darwin 10.8.0
+694 error command "/usr/local/bin/node" "/usr/local/bin/npm" "update"
+695 error cwd /DROPBOX/500_PROJECTS/903_sailsplus/100_codebase
+696 error node -v v0.10.0
+697 error npm -v 1.2.14
+698 error type non_object_property_load
+699 verbose exit [ 1, true ]
