@@ -2,12 +2,26 @@
 
 // snippet loader
 
-	function snippet(filename, args) {
-		var arg_type = typeof args;
-		if (arg_type == "string" || arg_type == "number") {
-			args = { 'id' : args };
+	function snippet(partial, filename, args) {
+		if (_.isArray(filename)) {
+			console.log('isArray');
+			return _.reduce(filename, function(memo, fn) {
+				var filepath = 'snippets/'+fn;
+				return memo + partial(filepath);
+			}, "");
+		} else if (filename) {
+			var filepath = 'snippets/'+filename;
+			if (args) {
+				if ( _.isString('args') || _.isNumber('args') ) {
+					args = { 'id' : args }
+				}
+				//console.log(args);
+				return partial (filepath, args);
+			} else {
+				//console.log (filepath);
+				return partial (filepath);
+			}
 		}
-		partial ('snippets/'+filename, args);
 	}
 
 %>
@@ -23,21 +37,15 @@
 		<%- partial('snippets/conditionizr') %>
 		<%- partial('snippets/jquery') %>
 		<%- partial('snippets/require') %>
-				
-		<script>
-		  /*require(['jquery'], function ($) {
-		    // embedded js goes here
-		  });*/
-		</script>
-				
+		
 	</head>
 
-	<body>
+	<body>		
 		<%- body %>
+		<%- snippet(partial, ['lipsum', 'lipsum']) %>
 
 		<%- assets.js() %>
 		<%- assets.templateLibrary() %>
-		<%- partial('snippets/google-analytics', { code : 'XX-XXXXXXX' }) %>	
-
+		<%- partial('snippets/ga.ejs', { 'id' : 'XX-XXXXXXX' }) %>		
 	</body>
 </html>
