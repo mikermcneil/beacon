@@ -2,7 +2,7 @@
 
 	// snippet loaders
 	
-	//  snippet examples 
+	//  examples:
 	//
 	//	snippet('something');					
 	//	snippet('something', 1001);											// id = 1001
@@ -21,20 +21,16 @@
 
 	function snippet(partial, snip_ref, args) {
 		if (filename) {		
-			//##console.log(filename);		
 			var filepath = 'snippets/'+filename;
 			// if given an argument
 			if (args) {
-				//##console.log(args);					
 				// if argument is just a value, wrap it as an object
 				if ( _.isString(args) || _.isNumber(args) ) {
-					console.log('args was a value ' + args);
 					args = { 'id' : args }
 				}
 			} else {
 				args = null;
 			}			
-			console.log('ARGS = ' + args);
 			return partial(filepath, args);
 		}
 	}
@@ -46,13 +42,11 @@
 		
 		// if its a string, break it out into csv list
 		if (snips.length == 1) {
-			console.log("1 value = " + snips[0]);
 			if (_.isString(snips[0])) snips = snips[0].split(", ");
 		}		
 		
 		// append the contents together and return them
 		return _.reduce(snips, function(memo, snip_ref) {
-			console.log('snip_ref = ' + snip_ref);
 			// if snip_ref is an array, split it into filename and args
 			if (_.isArray(snip_ref)) {
 				filename = snip_ref[0];
