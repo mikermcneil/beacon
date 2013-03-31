@@ -8,18 +8,24 @@
 
 	<header>
 		<h1>
-			<% if (page.isHome()) { ?><a><% } %>Site Title<% if (page.isHome()) { ?></a><% } %>
+			<!-- how to use conditionals -->
+			<% if (page.isHome()) { ?><a><% } %>
+				Site Title
+			<% if (page.isHome()) { ?></a><% } %>
 		</h1>
 	</header>
 	
 	<nav>
 		<ul>
+			<!-- how to call a page snippet -->
 			<% snippet('menu', 'headerNav') %>
 		</ul>
 	</nav>
 	
 	<div id="content">
 	
+		<!-- how to run the post loop -->
+		
         <% if (posts.hasPosts) { %>    
         
         	<% if (page.isArchive) { %>
@@ -33,6 +39,7 @@
 				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->                    
 				<h6><% snippet('commentCount') %></h6>
 				
+				<!-- how to display a featured img -->
 				<img class="thumb" src="<%- post.featuredImg('thumb') %>" alt="" />
 				
 			<% } %>
