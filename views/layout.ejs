@@ -16,8 +16,8 @@
 	//	TODOS: 
 	//  - get fallback func working, or find better solution for default settings
 	//	- create way to externally set values/defaults?  i.e. snippets.placeholdit.id = "200x200";
-	//  - subfolders
-	//  - root folder overrides
+	//  - auto search in subfolders
+	//  - override snippet subfolder if found in root
 	
 	/* UNFINISHED VERSION
 	function get_snippet_path (filename) {
@@ -35,6 +35,7 @@
 	}
 	*/
 	
+	/* TEMP VERSION */
 	function get_snippet_path (filename) {
 		if (filename.search('/') > 0) {
 			return ('snippets/' + filename);
