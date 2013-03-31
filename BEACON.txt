@@ -1,5 +1,10 @@
-BEACON - concept for an ideal blogging platform
+BEACON - the ideal blogging platform
 ===
+
+Just like WordPress, but without the stupid parts. See template concept in /views/blog.ejs
+
+Rough Draft Data Model:
+---
 
 site
 	.title
@@ -19,15 +24,21 @@ page
 	.permalink
 	.posts
 	.bodyclass
-
+	
+collections						// like WordPress Custom Post Types	
+								// comes with Posts, Pages, Users
+								// addons for Portfolio, Links
+								
 post
 	.id
 	.title
 	.slug
 	.permalink
-	.contentType
+	.collection					// like WP's custom post types
+	.postType					// micro blogging taxonomy
 	.content({ limit: 100; images: false; html: false; link: "Read More..."})
-	.date
+	.rawContent 				// no formatting
+	.date()
 	.modified
 	.status
 	.template
@@ -46,11 +57,13 @@ image
 	.slug
 	.ext
 	.path
-	
+		
 cats
-tags
+tags			// global set of categories, tags
+postTypes		// micro blogging formats, only applied to posts
+taxonomies		// additional taxonomies can be added
 	
-users			// this should really just be a contentType
+users
 	.id
 	.username
 	.realname
@@ -67,10 +80,10 @@ menus			// simple abstraction of WordPress menu manager
 		.title
 		.dest
 	
-query
+query			// default collection is posts, comes preloaded like 'var posts = query()'
 	.reset
 	.default
 	
-query_obj		// every page load, runs 'var posts = query();'
+query_obj
 	.hasPosts
 	.forEach
