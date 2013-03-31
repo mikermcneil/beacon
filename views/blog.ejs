@@ -78,7 +78,7 @@
 	
 	 		<h4>Recent Portfolio Items</h4>
 	 	
-	 		<% var items = posts.query('{ 'postType': 'portfolio', 'orderBy' : 'recent', 'num' : 3 }'); %>
+	 		<% var items = query('{ 'contentType': 'portfolio', 'orderBy' : 'recent', 'num' : 3 }'); %>
 	 		
 	 		<ul>
 	 		
@@ -108,7 +108,7 @@
 
 			<!-- quick post query -->
 		
-			<h6><%- query('about', 'title')</h6>
+			<h4><%- query('about', 'title')</h4>
 			
 			<%- query('about', 'content') %>
 			

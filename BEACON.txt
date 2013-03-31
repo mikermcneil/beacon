@@ -25,43 +25,21 @@ post
 	.title
 	.slug
 	.permalink
-	.content({ limit : 100; images : false; html : false; })
+	.contentType
+	.content({ limit: 100; images: false; html: false; link: "Read More..."})
 	.date
 	.modified
 	.status
 	.template
-	.type
-		.set_taxonomies()
-		.set_fields()
 	.cats
 	.tags
 	.taxonomies
 	.fields
 	.comments
 	.author	
-	.numComments
 	.parent
 	.order
 	.commentCount
-	
-	
-	
-$post–>ID – ID of the current post.
-$post–>post_category - Retrieves the ID of the post category.
-$post–>post_parent - ID of the page parent. Useful for creating custom navigational elements.
-$post–>post_title – Post Title
-$post–>post_excerpt - Post excerpt
-$post–>post_content – Retrieves all of the post content, along with any markup.
-$post–>post_name – Retrieving the slug of a post.
-$post–>guid – Post Url
-$post–>post_author – ID of post author post_parent
-$post–>post_type - Returns the type, page or post.
-$post–>menu_order - Returns the menu order as set in the post/page editing window. Often menu items are sorted via this value.
-$post–>post_date - Retrieves the integer timestamp for when the post was published. The output can be customized. See the php.net date manual.
-$post–>post_modified - Retrieves the integer timestamp for when the post was last modified.
-$post–>post_status - Retrieves one of five possible posts statuses: publish, private, draft, pending, future.
-$post–>comment_count - Returns the number of comments, pings, and trackbacks for a given post.
-	
 	
 image
 	.id
@@ -72,26 +50,12 @@ image
 cats
 tags
 	
-users
+users			// this should really just be a contentType
 	.id
 	.username
 	.realname
 	.access
 	.avatar
 	.links
-	.intro
+	.desc
 	.fields
-	
-posts
-	.reset
-	.default
-	.query {
-		cat
-		postType
-		tag
-		fields
-		date
-		orderBy
-		order
-		num
-	}
