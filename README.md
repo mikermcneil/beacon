@@ -53,9 +53,9 @@ System:
 - google-font.ejs
 - jquery.ejs (direct to google)
 - require.ejs (loads jam dependencies)
-- templates.ejs
+- templates.ejs (wrapper for assets.templateLibrary)
 - typekit.ejs
-- viewport.ejs
+- viewport.ejs (responsive viewport)
 
 Content:
 
