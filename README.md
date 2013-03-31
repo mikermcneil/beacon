@@ -61,10 +61,12 @@ Content:
 
 - disqus.ejs
 - instagram.ejs
+- gist.ejs (github gist)
 - lipsum.ejs (placeholder text)
 - placeholdit.ejs (placeholder image)
 - quote.ejs
 - scribd.ejs
+- slideshare.ejs
 - tweet.ejs
 - vimeo.ejs
 - youtube.ejs
