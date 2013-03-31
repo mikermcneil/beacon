@@ -23,7 +23,7 @@ I'd like to get the manager working like this:
 	snippet('ga', 'UA-6700192');										// prints out google analytics code
 	snippet('youtube', {id: 'yt99erls', width: 300, height: 200)});  	// prints out youtube video embed
 	
-	snippets('jquery, conditionizr, require');							// this string will get parsed
+	snippets('jquery, conditionizr, require');							// print out multiple snippets
 	snippets('jquery', 'conditionizr', ['favicon', 'favicon.png']);	
 	snippets(['youtube', {id: 'yt98erls', width: 300, height: 200)}], ['youtube', {id: 'xt33epes', width: 300, height: 200)}]);
 	
