@@ -14,24 +14,54 @@
 	//	snippets('something1', [ 'something2', {id: 1001, desc: 'description goes here'} ], 'something3'); 
 	//																		// snippet + args obj, inside an array
 	//	TODOS: 
-	//  - get default values working
-	//	- external default values?
+	//  - get fallback func working / or better solution
+	//	- create way to externally set values/defaults?  snippets.placeholdit.id = "200x200";
 	//  - subfolders
 	//  - root folder overrides
-
-	function snippet(partial, filename, args) {	
-		if (filename) {		
-			var filepath = 'snippets/'+filename;
-			// if given an argument
-			if (args) {
-				// if argument is just a value, wrap it as an object
-				if ( _.isString(args) || _.isNumber(args) ) {
-					args = { 'id' : args }
-				}
-			} else {
-				args = null;
-			}			
-			return partial(filepath, args);
+	
+	/* UNFINISHED VERSION
+	function get_snippet_path (filename) {
+		if (filename.search('/') > 0) {
+			return filename;
+		} else if fs.exists('snippets/' + filename + '.ejs') {
+			return 'snippets/' + filename;
+		} else {
+			foreach (folders as folder) {
+				if fs.exists('snippets/' + folder + '.ejs') {
+					return 'snippets/' + folder + '/' + filename;
+				}					
+			}
+		}	
+	}
+	*/
+	
+	function get_snippet_path (filename) {
+		if (filename.search('/') > 0) {
+			return filename;
+		} else {
+			return ('snippets/' + filename);
+		}
+	}
+	
+	function prep_snippet_settings (settings) {
+		// if given something
+		if (settings) {
+			// if argument is just a value, wrap it as an object
+			if ( _.isString(settings) || _.isNumber(settings) ) {
+				settings = { 'id' : settings };
+			}
+		} else {
+			settings = null;
+		}		
+		return settings;
+	}
+	
+	
+	function snippet(partial, filename, settings) {	
+		if (filename) {
+			var filepath = get_snippet_path(filename);
+			settings = prep_snippet_settings(settings);
+			return partial(filepath, settings);
 		}
 	}
 		
@@ -74,7 +104,6 @@
 	</head>
 
 	<body>		
-		<%- snippet(partial, 'placeholdit', '200x200') %>
 		<%- body %>	
 		<%- snippets(partial, 'js', 'templates', ['ga', 'XXX']) %>			
 	</body>
