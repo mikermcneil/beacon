@@ -18,7 +18,7 @@
 	<nav>
 		<ul>
 			<!-- how to call a page snippet -->
-			<% snippet('menu', 'headerNav') %>
+			<% snippet('headerNav') %>
 		</ul>
 	</nav>
 	
@@ -121,7 +121,7 @@
  	
  	<footer>
  		<p><%- site.footerText %></p>
- 		<%- snippet('menu'), footerNav %>
+ 		<%- snippet('footerNav') %>
  	</footer>
  	
  	<%- snippet('footerAssets') %>

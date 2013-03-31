@@ -60,6 +60,13 @@ users			// this should really just be a contentType
 	.desc
 	.fields
 	
+menus			// simple abstraction of WordPress menu manager
+	.slug
+	.links
+		.text
+		.title
+		.dest
+	
 query
 	.reset
 	.default
