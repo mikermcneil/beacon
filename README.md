@@ -13,7 +13,7 @@ This is a fresh Sails install, with a few extras:
 Snippet Manager:
 ---
 
-The goal of this is to create a library of commonly used snippets, which can be passed information or easily overridden.  This is inspired by WordPress' template tag system, the WP get_template_part function, and the punch-thirdparty-snippets-helper library. Maybe over time, this could grow into a full plugin system.
+The goal of this is to create a library of commonly used template components, which can be passed information or easily overridden.  This is inspired by WordPress' template tag system, the WP get_template_part function, and the punch-thirdparty-snippets-helper library. Maybe over time, this could grow into a full plugin system.
 
 Some snippets don't need any settings. Other snippets take a single setting, this is available as 'id' inside the snippet. Other snippets need more settings, you can pass them a JSON object.
 
