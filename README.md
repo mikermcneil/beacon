@@ -21,7 +21,7 @@ I'd like to get the manager working like this:
 
 	snippet('jquery');													// prints out google jquery include				
 	snippet('ga', 'UA-6700192');										// prints out google analytics code
-	snippet('youtube', {id: 'yt99erls', width: 300, height: 200)});  	// id = 1001, desc = "text goes here"
+	snippet('youtube', {id: 'yt99erls', width: 300, height: 200)});  	// prints out youtube video embed
 	
 	snippets('jquery, conditionizr, require');							// this string will get parsed
 	snippets('jquery', 'conditionizr', ['favicon', 'favicon.png']);	
