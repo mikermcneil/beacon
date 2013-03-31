@@ -20,7 +20,7 @@
 	
 	<div id="content">
 	
-        <% if (posts) { %>    
+        <% if (posts.hasPosts) { %>    
         
         	<% if (page.isArchive) { %>
 				<h1><%- page.title %></h1>					        
@@ -29,11 +29,11 @@
         	<% posts.forEach() { %>
         	
                 <h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
-                <h3>by <%- post.author %> on <%- post.date('formatting') %></h3>
+                <h3>by <%- post.author %> on <%- post.date('m d, y') %></h3>
 				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->                    
 				<h6><% snippet('commentCount') %></h6>
 				
-				<img class="thumb" src="<%- post.featuredImg('thumb').url %>" alt="" />
+				<img class="thumb" src="<%- post.featuredImg('thumb') %>" alt="" />
 				
 			<% } %>
 			
@@ -45,19 +45,71 @@
  		
  	</div>
  	
- 	<aside>
+ 	<aside id="sidebar">
  	
- 		<!-- how to do multiple loops -->
+ 		<section>
  	
- 		<h4>Popular Posts</h4>
- 	
- 		<% posts.query('{ 'orderBy' : 'popularity', 'type' : 'post', 'num' : 5 }'); %>
- 		
-		<% posts.forEach() { %>
-			<li><a href="<%- post.permalink %>"><%- post.title %></a></li>
-		<% } %>
+	 		<!-- how to query multiple loops -->
+	 	
+	 		<h4>Popular Posts</h4>
+	 	
+	 		<% posts.query('{ 'orderBy' : 'popularity', 'num' : 5 }'); %>
+	 		
+	 		<ul>
+		 		
+				<% posts.forEach() { %>
+					<li><a href="<%- post.permalink %>"><%- post.title %></a></li>
+				<% } %>
+				
+			</ul>
+			
+			<% posts.reset(); %>
 		
-		<% posts.reset(); %>
+		</section>
+		
+		<section>
+		
+			<!-- how to query custom post types -->
+	
+	 		<h4>Recent Portfolio Items</h4>
+	 	
+	 		<% var items = posts.query('{ 'postType': 'portfolio', 'orderBy' : 'recent', 'num' : 3 }'); %>
+	 		
+	 		<ul>
+	 		
+				<% items.forEach() { %>			
+					<li>
+					
+						<a href="<%- item.permalink %>">
+							<img src="<%- item.featuredImg('thumb') ">
+							<h6><%- item.title %></h6>
+						</a>
+						
+						<!-- how to display custom fields -->
+						<% if (item.fields.client) { >
+							<em>for <%- item.fields.client -></em>
+						<% } %>
+						
+					</li>
+				<% } %>
+			
+			</ul>
+			
+			<% items.reset(); %>
+		
+		</section>
+		
+		<section>
+
+			<!-- quick post query -->
+		
+			<h6><%- query('about', 'title')</h6>
+			
+			<%- query('about', 'content') %>
+			
+			<p><a href="<%- query('about', 'permalink') %>">Read More</a></p>
+		
+		</section>
  	
  	</aside>
  	
