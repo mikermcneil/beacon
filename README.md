@@ -82,3 +82,4 @@ Other Todos:
 - markdown view parser?
 - frontend boilerplate code
 - get require.js working with knockout (or bypass it)
+- autoload css/js for snippets?
