@@ -33,22 +33,20 @@
 			<% } %>
         
         	<% posts.forEach() { %>
-        	
+
                 <h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
                 <h3>by <%- post.author %> on <%- post.date('m d, y') %></h3>
-				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->                    
-				<h6><% snippet('commentCount') %></h6>
+                
+				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->
 				
+				<small><% snippet('commentCount') %></small>
+
 				<!-- how to display a featured img -->
 				<img class="thumb" src="<%- post.featuredImg('thumb') %>" alt="" />
-				
+
 			<% } %>
 			
- 		<% } else { %>
- 		
- 			<%- snippet('error') %>
-
- 		<% } %>
+ 		<% } else snippet('error'); %>
  		
  	</div>
  	
