@@ -14,8 +14,8 @@
 	//	snippets('something1', [ 'something2', {id: 1001, desc: 'description goes here'} ], 'something3'); 
 	//																		// snippet + args obj, inside an array
 	//	TODOS: 
-	//  - get fallback func working / or better solution
-	//	- create way to externally set values/defaults?  snippets.placeholdit.id = "200x200";
+	//  - get fallback func working, or find better solution for default settings
+	//	- create way to externally set values/defaults?  i.e. snippets.placeholdit.id = "200x200";
 	//  - subfolders
 	//  - root folder overrides
 	
@@ -37,8 +37,9 @@
 	
 	function get_snippet_path (filename) {
 		if (filename.search('/') > 0) {
-			return filename;
+			return ('snippets/' + filename);
 		} else {
+			// TODO: check for snippet inside folders
 			return ('snippets/' + filename);
 		}
 	}
@@ -100,11 +101,11 @@
 <html>
 	<head>
 		<title><%- title %></title>
-		<%- snippets(partial, 'favicon, viewport, css, conditionizr, jquery, require') %>
+		<%- snippets(partial, 'system/favicon, system/viewport, system/css, system/conditionizr, system/jquery, system/require') %>
 	</head>
 
 	<body>		
 		<%- body %>	
-		<%- snippets(partial, 'js', 'templates', ['ga', 'XXX']) %>			
+		<%- snippets(partial, 'system/js', 'system/templates', ['system/ga', 'XXX']) %>			
 	</body>
 </html>
