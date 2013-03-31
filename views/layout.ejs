@@ -19,7 +19,7 @@
 	//  - subfolders
 	//  - root folder overrides
 
-	function snippet(partial, snip_ref, args) {
+	function snippet(partial, filename, args) {	
 		if (filename) {		
 			var filepath = 'snippets/'+filename;
 			// if given an argument
@@ -59,6 +59,11 @@
 		}, "");
 						
 	}
+		
+	function fallback (passed, fallback) {
+		if (passed) return passed
+		else return fallback; 
+	}
 	
 %>
 <!DOCTYPE html>
@@ -69,6 +74,7 @@
 	</head>
 
 	<body>		
+		<%- snippet(partial, 'placeholdit', '200x200') %>
 		<%- body %>	
 		<%- snippets(partial, 'js', 'templates', ['ga', 'XXX']) %>			
 	</body>
