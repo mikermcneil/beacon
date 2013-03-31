@@ -44,7 +44,6 @@ image
 	
 cats
 tags
-taxonomies()
 	
 users
 	.id
@@ -54,6 +53,7 @@ users
 	.avatar
 	.links
 	.intro
+	.fields
 	
 posts
 	.reset
