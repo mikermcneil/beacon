@@ -59,3 +59,11 @@ users			// this should really just be a contentType
 	.links
 	.desc
 	.fields
+	
+query
+	.reset
+	.default
+	
+query_obj		// every page load, runs 'var posts = query();'
+	.hasPosts
+	.forEach

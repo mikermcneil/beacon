@@ -24,8 +24,8 @@
 	
 	<div id="content">
 	
-		<!-- how to run the post loop -->
-		
+		<!-- how to run the main post loop -->
+				
 		<% if (posts.hasPosts) { %>    
 
 			<% if (page.isArchive) { %>
@@ -35,7 +35,8 @@
 			<% posts.forEach() { %>
 
 				<h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
-				<h3>by <%- post.author %> on <%- post.date('m d, y') %></h3>
+				
+				<h4>by <%- post.author %> on <%- post.date('m d, y') %></h4>
 
 				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->
 
@@ -54,31 +55,31 @@
  	
  		<section>
  	
-	 		<!-- how to query multiple loops -->
+	 		<!-- how to query a secondary loop -->
 	 	
 	 		<h4>Popular Posts</h4>
 	 	
-	 		<% posts.query('{ 'orderBy' : 'popularity', 'num' : 5 }'); %>
+	 		<% var popular_posts = query('{ 'orderBy': 'popularity', 'num': 5 }'); %>
 	 		
 	 		<ul>
 		 		
-				<% posts.forEach() { %>
-					<li><a href="<%- post.permalink %>"><%- post.title %></a></li>
+				<% popular_posts.forEach() { %>
+					<li><a href="<%- popular_post.permalink %>"><%- popular_post.title %></a></li>
 				<% } %>
 				
 			</ul>
 			
-			<% posts.reset(); %>
+			<% popular_posts.reset(); %>
 		
 		</section>
 		
 		<section>
 		
-			<!-- how to query custom post types -->
+			<!-- how to query a custom content type -->
 	
 	 		<h4>Recent Portfolio Items</h4>
 	 	
-	 		<% var items = query('{ 'contentType': 'portfolio', 'orderBy' : 'recent', 'num' : 3 }'); %>
+	 		<% var items = query('{ 'contentType': 'portfolio', 'orderBy': 'recent', 'num': 3 }'); %>
 	 		
 	 		<ul>
 	 		
@@ -106,7 +107,7 @@
 		
 		<section>
 
-			<!-- quick post query -->
+			<!-- quick query helper -->
 		
 			<h4><%- query('about', 'title')</h4>
 			
