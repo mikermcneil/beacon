@@ -1,51 +1,81 @@
 <%
 
-// snippet loader
+	// snippet loaders
+	
+	//  snippet examples 
+	//
+	//	snippet('something');					
+	//	snippet('something', 1001);											// id = 1001
+	//	snippet('something', {id: 1001, desc: "description goes here")});  	// id = 1001, desc = "text goes here"
+	//	
+	//	snippets('something, something2, something3'); 						// parsed list of snippets (no args allowed)
+	//	snippets('something1', 'something2', 'something3'); 				// comma separated list of snippets
+	//	snippets('something1', [ 'something2', 1001 ]), 'something3';		// snippet + id, inside an array
+	//	snippets('something1', [ 'something2', {id: 1001, desc: 'description goes here'} ], 'something3'); 
+	//																		// snippet + args obj, inside an array
+	//	TODOS: 
+	//  - get default values working
+	//	- external default values?
+	//  - subfolders
+	//  - root folder overrides
 
-	function snippet(partial, filename, args) {
-		if (_.isArray(filename)) {
-			console.log('isArray');
-			return _.reduce(filename, function(memo, fn) {
-				var filepath = 'snippets/'+fn;
-				return memo + partial(filepath);
-			}, "");
-		} else if (filename) {
+	function snippet(partial, snip_ref, args) {
+		if (filename) {		
+			//##console.log(filename);		
 			var filepath = 'snippets/'+filename;
+			// if given an argument
 			if (args) {
-				if ( _.isString('args') || _.isNumber('args') ) {
+				//##console.log(args);					
+				// if argument is just a value, wrap it as an object
+				if ( _.isString(args) || _.isNumber(args) ) {
+					console.log('args was a value ' + args);
 					args = { 'id' : args }
 				}
-				//console.log(args);
-				return partial (filepath, args);
 			} else {
-				//console.log (filepath);
-				return partial (filepath);
-			}
+				args = null;
+			}			
+			console.log('ARGS = ' + args);
+			return partial(filepath, args);
 		}
 	}
-
+		
+	function snippets(partial) {
+	
+		// slice off partial from args
+		var snips = Array.prototype.slice.call(arguments, 1);
+		
+		// if its a string, break it out into csv list
+		if (snips.length == 1) {
+			console.log("1 value = " + snips[0]);
+			if (_.isString(snips[0])) snips = snips[0].split(", ");
+		}		
+		
+		// append the contents together and return them
+		return _.reduce(snips, function(memo, snip_ref) {
+			console.log('snip_ref = ' + snip_ref);
+			// if snip_ref is an array, split it into filename and args
+			if (_.isArray(snip_ref)) {
+				filename = snip_ref[0];
+				args = snip_ref[1];
+			} else {
+				filename = snip_ref;
+				args = null;
+			}			
+			return memo + snippet(partial, filename, args);
+		}, "");
+						
+	}
+	
 %>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title><%- title %></title>
-
-		<%- partial('snippets/viewport') %>
-		
-		<%- assets.css() %>
-		
-		<%- partial('snippets/conditionizr') %>
-		<%- partial('snippets/jquery') %>
-		<%- partial('snippets/require') %>
-		
+		<%- snippets(partial, 'favicon, viewport, css, conditionizr, jquery, require') %>
 	</head>
 
 	<body>		
-		<%- body %>
-		<%- snippet(partial, ['lipsum', 'lipsum']) %>
-
-		<%- assets.js() %>
-		<%- assets.templateLibrary() %>
-		<%- partial('snippets/ga.ejs', { 'id' : 'XX-XXXXXXX' }) %>		
+		<%- body %>	
+		<%- snippets(partial, 'js', 'templates', ['ga', 'XXX']) %>			
 	</body>
 </html>
