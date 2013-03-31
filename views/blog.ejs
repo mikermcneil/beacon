@@ -1,0 +1,71 @@
+<!-- Template: Beacon Blog Concept -->
+<head>
+	<title><%- site.title %> &mdash; <%- page.title %></title>
+	<%- snippet('headerStuff') %>
+</head>
+
+<body class="<%- page.bodyClass %>">
+
+	<header>
+		<h1>
+			<% if (page.isHome()) { ?><a><% } %>Site Title<% if (page.isHome()) { ?></a><% } %>
+		</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<% snippet('menu', 'headerNav') %>
+		</ul>
+	</nav>
+	
+	<div id="content">
+	
+        <% if (posts) { %>    
+        
+        	<% if (page.isArchive) { %>
+				<h1><%- page.title %></h1>					        
+			<% } %>
+        
+        	<% posts.forEach() { %>
+        	
+                <h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
+                <h3>by <%- post.author %> on <%- post.date('formatting') %></h3>
+				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->                    
+				<h6><% snippet('commentCount') %></h6>
+				
+				<img class="thumb" src="<%- post.featuredImg('thumb').url %>" alt="" />
+				
+			<% } %>
+			
+ 		<% } else { %>
+ 		
+ 			<%- snippet('error') %>
+
+ 		<% } %>
+ 		
+ 	</div>
+ 	
+ 	<aside>
+ 	
+ 		<!-- how to do multiple loops -->
+ 	
+ 		<h4>Popular Posts</h4>
+ 	
+ 		<% posts.query('{ 'orderBy' : 'popularity', 'type' : 'post', 'num' : 5 }'); %>
+ 		
+		<% posts.forEach() { %>
+			<li><a href="<%- post.permalink %>"><%- post.title %></a></li>
+		<% } %>
+		
+		<% posts.reset(); %>
+ 	
+ 	</aside>
+ 	
+ 	<footer>
+ 		<p><%- site.footerText %></p>
+ 		<%- snippet('menu'), footerNav %>
+ 	</footer>
+ 	
+ 	<%- snippet('footerAssets') %>
+ </body>
+ </html>
