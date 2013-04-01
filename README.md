@@ -54,7 +54,7 @@ Stucture
 - Plugins: small add-ons that give extra functionality
 - Apps: large add-ons that give your website super powers
 
-Content would be broken into "collections" (similar to WordPress custom post types) - starting with Posts, Pages and Users. The theme data model and theme structure would stay very similar to how WordPress works, but simpler and more consistent. Themes, plugins and apps could be installed thru an automatic "container" loader.
+Content would be broken into "collections" (similar to WordPress custom post types) - starting with Posts, Pages and Users. The "post" model and theme structure would follow WordPress' lead, but with some improvements. Themes, plugins and apps could be installed thru an automatic "container" loader.
 
 
 More Ideas
