@@ -25,4 +25,4 @@ More Info
 - [Snippet Manager Overview](SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
 - [What Beacon adds to Sails.js](sails.md)
-- Differences between Beacon and WordPress (coming soon)
+- [Why Beacon is Better than WordPress](wordpress.md)
