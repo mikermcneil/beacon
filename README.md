@@ -39,7 +39,11 @@ Like this:
 
 		<% } %>
 		
-		<% } else snippet('error'); %>		
+		<% } else snippet('error'); %>
+		
+And like this:
+
+![Beacon Theme Structure](http://cl.ly/image/3V2O3z0I283U)				
  		
 Wouldn't that be cool?? 		 		
 
@@ -50,10 +54,10 @@ Stucture
 - Plugins: small add-ons that give extra functionality
 - Apps: large add-ons that give your website super powers
 
-The theme data model and theme structure would stay very similar to how WordPress works, but even simpler and more consistent. Themes, plugins and apps could be installed via an easy-to-use "container" loader.
+Content would be broken into "collections" (similar to WordPress custom post types) - starting with Posts, Pages and Users. The theme data model and theme structure would stay very similar to how WordPress works, but simpler and more consistent. Themes, plugins and apps could be installed thru an automatic "container" loader.
 
 
-More Info
+More Ideas
 ---
 
 - [Proposed Data Model](MODEL.md) 
@@ -63,7 +67,7 @@ More Info
 - [Snippet Manager Overview](SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
 - [What Beacon adds to Sails.js](SAILS.md)
-- [Why Beacon is Better than WordPress](WORDPRESS.md)
+- [Why Beacon Would be Better than WordPress](WORDPRESS.md)
 
 
 Credits
