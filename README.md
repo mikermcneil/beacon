@@ -43,7 +43,7 @@ Like this:
 		
 And like this:
 
-![Beacon Theme Structure](http://cl.ly/image/2i3s0q1J2936/beacon_theme.png)		
+![Beacon Theme Structure](http://f.cl.ly/items/3E3l1J1L1b153n0v1l1Y/beacon.png)		
  		
 Wouldn't that be cool?		 		
 
