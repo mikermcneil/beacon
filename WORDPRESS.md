@@ -7,4 +7,4 @@ Why Beacon is Better than WordPress
 - MIT license is friendlier and more flexible than the GPL
 - and more...
 
-Got idea? Contact me d@dylanized.com
+Got ideas? Contact me d@dylanized.com
