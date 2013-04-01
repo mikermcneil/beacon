@@ -1,9 +1,4 @@
-BEACON - the ideal blogging platform
-===
-
-Just like WordPress, but without the stupid parts. See template concept in /views/blog.ejs
-
-Rough Draft Data Model:
+Concept of Beacon Data Model:
 ---
 
 site
