@@ -1,0 +1,8 @@
+{
+    "name": "aggro",
+    "private": true,
+    "version": "0.0.0",
+    "description": "Beacon social media aggregator",
+    "author": "",
+    "license": "MIT"
+}

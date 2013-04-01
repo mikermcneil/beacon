@@ -1,0 +1,8 @@
+{
+    "name": "flatfile",
+    "private": true,
+    "version": "0.0.0",
+    "description": "flat file / markdown plugin for Beacon",
+    "author": "",
+    "license": "MIT"
+}
