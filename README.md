@@ -7,6 +7,44 @@ Beacon is an idea for a streamlined CMS engine built on top of [Sails.js](http:/
 
 So far this is just a conceptual mockup, please pardon our dust.
 
+What Might It Look Like?
+---
+
+<code>
+
+	<!-- the main post loop -->
+			
+	<% if (posts.hasPosts) { %>    
+
+		<% if (page.isArchive) { %>
+			<h1><%- page.title %></h1>					        
+		<% } %>
+
+		<% posts.forEach() { %>
+		
+			<div class="post <%- post.postType %>">
+
+				<h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
+				
+				<h4>by <%- post.author %> on <%- post.date('m d, y') %></h4>
+
+				<%- post.content({'limit': 50, 'link': 'Read More...'}) ->
+
+				<small><% snippet('commentCount') %></small>
+
+				<!-- how to display a featured img -->
+				<img class="thumb" src="<%- post.featuredImg('thumb') %>" alt="" />
+			
+			</div>
+
+		<% } %>
+		
+		<% } else snippet('error'); %>
+
+</code> 		
+ 		
+Wouldn't that be cool?? 		 		
+
 Stucture
 ---
 
@@ -23,7 +61,16 @@ More Info
 - [Proposed Data Model](MODEL.md) 
 - [Theme Structure Overview](THEME.md)
 - [Default Theme Prototype](beacon/themes/skipper/)
+- [Single-Page Theme Prototype](views/blog.ejs)
 - [Snippet Manager Overview](SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
 - [What Beacon adds to Sails.js](SAILS.md)
 - [Why Beacon is Better than WordPress](WORDPRESS.md)
+
+
+What do you think?
+---
+
+[d@dylanized.com](mailto:d@dylanized.com)
+
+[@dylanized](http://twitter.com/dylanized)
