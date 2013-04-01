@@ -74,9 +74,10 @@ Credits
 ---
 
 - [Sails.js](http://sailsjs.org)
-- [STLJS](http://stljs.org)
+- [EJS](http://embeddedjs.com/)
 - Liquid Templating Language
 - [WordPress](http://wordpress.org)
+- [St. Louis Javascript Meetup](http://stljs.org)
 
 
 What do you think?
