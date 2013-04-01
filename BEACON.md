@@ -7,22 +7,22 @@ Beacon is a streamlined CMS engine built on top of Sails.js and Node. It is mode
 
 So far this is just a conceptual mockup, please pardon our dust.
 
-Beacon - an Introduction
+Stucture
 ---
 
 Beacon is composed of 3 parts:
 
-- Themes: the frontend of your blog or website, just like WordPress does it
+- Themes: the frontend of your blog or website
 - Plugins: small add-ons that give extra functionality
-- Apps: large add-ons that give your website superpowers
+- Apps: large add-ons that give your website super powers
 
-Documentation
+Themes and plugins use a simple snippets manager to include frontend components.
+
+More Info
 ---
 
-Sections to come:
-
-- Data Model
-- Theme Structure
-- Conditionals and Helpers
-- Differences between Beacon and WordPress
-- What Beacon adds to Sails.js
+- [Data Model](MODEL.md) 
+- [Theme Structure](beacon/themes/skipper/)
+- [Conditionals and Helpers](beacon/apps/core/helpers.js)
+- [What Beacon adds to Sails.js](sails.md)
+- Differences between Beacon and WordPress (coming soon)
