@@ -43,9 +43,9 @@ Like this:
 		
 And like this:
 
-![Beacon Theme Structure](http://cl.ly/image/3V2O3z0I283U)				
+![Beacon Theme Structure](http://cl.ly/image/2i3s0q1J2936/beacon_theme.png)		
  		
-Wouldn't that be cool?? 		 		
+Wouldn't that be cool?		 		
 
 Stucture
 ---
