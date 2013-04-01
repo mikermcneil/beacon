@@ -14,7 +14,7 @@ Stucture
 - Plugins: small add-ons that give extra functionality
 - Apps: large add-ons that give your website super powers
 
-The theme data model and theme structure would stay very similar to the WordPress, but better. Themes, plugins and apps could be installed via an easy-to-use "container" loader.
+The theme data model and theme structure would stay very similar to how WordPress works, but even simpler and more consistent. Themes, plugins and apps could be installed via an easy-to-use "container" loader.
 
 
 More Info
