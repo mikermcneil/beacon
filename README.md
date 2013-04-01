@@ -12,8 +12,6 @@ What Might It Look Like?
 
 Like this:
 
-<code>
-
 	<!-- the main post loop -->
 			
 	<% if (posts.hasPosts) { %>    
@@ -41,9 +39,7 @@ Like this:
 
 		<% } %>
 		
-		<% } else snippet('error'); %>
-
-</code> 		
+		<% } else snippet('error'); %>		
  		
 Wouldn't that be cool?? 		 		
 
