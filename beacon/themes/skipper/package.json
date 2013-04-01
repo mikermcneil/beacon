@@ -1,0 +1,10 @@
+{
+    "name": "skipper",
+    "title": "Skipper",
+    "private": true,
+    "version": "0.0.0",
+    "description": "the Beacon default theme",
+    "requires" : null;
+    "author": "",
+    "license": "MIT"
+}
