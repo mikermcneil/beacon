@@ -39,7 +39,7 @@ Like this:
 
 		<% } %>
 		
-		<% } else snippet('error'); %>
+	<% } else snippet('error'); %>
 		
 And like this:
 
