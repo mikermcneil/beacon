@@ -21,9 +21,9 @@ More Info
 ---
 
 - [Proposed Data Model](MODEL.md) 
-- [Theme Structure Overview](sails.md)
+- [Theme Structure Overview](THEME.md)
 - [Default Theme Prototype](beacon/themes/skipper/)
 - [Snippet Manager Overview](SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
-- [What Beacon adds to Sails.js](sails.md)
-- [Why Beacon is Better than WordPress](wordpress.md)
+- [What Beacon adds to Sails.js](SAILS.md)
+- [Why Beacon is Better than WordPress](WORDPRESS.md)
