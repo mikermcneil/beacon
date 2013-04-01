@@ -10,6 +10,8 @@ So far this is just a conceptual mockup, please pardon our dust.
 What Might It Look Like?
 ---
 
+Like this:
+
 <code>
 
 	<!-- the main post loop -->
@@ -66,6 +68,15 @@ More Info
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
 - [What Beacon adds to Sails.js](SAILS.md)
 - [Why Beacon is Better than WordPress](WORDPRESS.md)
+
+
+Credits
+---
+
+- [Sails.js](http://sailsjs.org)
+- [STLJS](http://stljs.org)
+- Liquid Templating Language
+- [WordPress](http://wordpress.org)
 
 
 What do you think?
