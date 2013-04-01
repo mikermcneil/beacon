@@ -26,19 +26,19 @@ page
 -	.posts
 -	.bodyclass
 	
-collections						// like WordPress Custom Post Types	
-								// comes with Posts, Pages, Users
-								// addons for Portfolio, Links
+collections						<< like WordPress Custom Post Types	
+								<< comes with Posts, Pages, Users
+								<< addons for Portfolio, Links
 								
 post
 -	.id
 -	.title
 -	.slug
 -	.permalink
--	.collection					// like WP's custom post types
--	.postType					// micro blogging taxonomy
+-	.collection					<< like WP's custom post types
+-	.postType					<< micro blogging taxonomy
 -	.content({ limit: 100; images: false; html: false; link: "Read More..."})
--	.rawContent 				// no formatting
+-	.rawContent 				<< no formatting
 -	.date()
 -	.modified
 -	.status
@@ -60,9 +60,9 @@ image
 -	.path
 		
 cats
-tags			// global set of categories, tags
-postTypes		// micro blogging formats, only applied to posts
-taxonomies		// additional taxonomies can be added
+tags			<< global set of categories, tags
+postTypes		<< micro blogging formats, only applied to posts
+taxonomies		<< additional taxonomies can be added
 	
 users
 -	.id
@@ -74,14 +74,14 @@ users
 -	.desc
 -	.fields
 	
-menus			// simple abstraction of WordPress menu manager
+menus			<< simple abstraction of WordPress menu manager
 -	.slug
 -	.links
 -		.text
 -		.title
 -		.dest
 	
-query			// default collection is posts, comes preloaded like 'var posts = query()'
+query			<< default collection is posts, comes preloaded like 'var posts = query()'
 -	.reset
 -	.default
 	
