@@ -21,7 +21,8 @@ More Info
 ---
 
 - [Proposed Data Model](MODEL.md) 
-- [Proposed Theme Structure](beacon/themes/skipper/)
+- [Theme Structure Overview](sails.md)
+- [Default Theme Prototype](beacon/themes/skipper/)
 - [Snippet Manager Overview](SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
 - [What Beacon adds to Sails.js](sails.md)
