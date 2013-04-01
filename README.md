@@ -83,6 +83,7 @@ Credits
 What do you think?
 ---
 
-[d@dylanized.com](mailto:d@dylanized.com)
+Hit me up:
 
-[@dylanized](http://twitter.com/dylanized)
+- email [d@dylanized.com](mailto:d@dylanized.com)
+- twitter [@dylanized](http://twitter.com/dylanized)
