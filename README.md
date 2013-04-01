@@ -60,14 +60,14 @@ Content would be broken into "collections" (similar to WordPress custom post typ
 More Ideas
 ---
 
-- [Proposed Data Model](MODEL.md) 
-- [Theme Structure Overview](THEME.md)
+- [Proposed Data Model](beacon/docs/MODEL.md) 
+- [Theme Structure Overview](beacon/docs/THEME.md)
 - [Default Theme Prototype](beacon/themes/skipper/)
 - [Single-Page Theme Prototype](views/blog.ejs)
-- [Snippet Manager Overview](SNIPPETS.md)
+- [Snippet Manager Overview](beacon/docs/SNIPPETS.md)
 - [Conditionals and Helpers List](beacon/apps/core/helpers.js)
-- [What Beacon adds to Sails.js](SAILS.md)
-- [Why Beacon Would be Better than WordPress](WORDPRESS.md)
+- [What Beacon adds to Sails.js](beacon/docs/SAILS.md)
+- [Why Beacon Would be Cooler than WordPress](beacon/docs/WORDPRESS.md)
 
 
 Credits

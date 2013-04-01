@@ -1,4 +1,4 @@
-Why Beacon Would Be Better than WordPress
+Why Beacon Would Be Cooler than WordPress
 ===
 
 - built on top of Javascript + Node.js, a modern web platform that is growing rapidly
