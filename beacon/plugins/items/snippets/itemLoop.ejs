@@ -1,0 +1,28 @@
+		<!-- the main post loop -->
+				
+		<% if (posts.hasPosts) { %>    
+
+			<% if (page.isArchive) { %>
+				<h1><%- page.title %></h1>					        
+			<% } %>
+
+			<% posts.forEach() { %>
+			
+				<div class="post <%- post.postType %>">
+
+					<h2><a href="<%- post.permalink %>" title="<%- post.title %>"><%- post.title %></a></h2>
+					
+					<h4>by <%- post.author %> on <%- post.date('m d, y') %></h4>
+	
+					<%- post.content({'limit': 50, 'link': 'Read More...'}) ->
+	
+					<small><% snippet('commentCount') %></small>
+	
+					<!-- how to display a featured img -->
+					<img class="thumb" src="<%- post.featuredImg('thumb') %>" alt="" />
+				
+				</div>
+
+			<% } %>
+			
+ 		<% } else snippet('error'); %>

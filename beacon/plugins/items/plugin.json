@@ -1,0 +1,8 @@
+{
+    "name": "items",
+    "private": true,
+    "version": "0.0.0",
+    "description": "portfolio collection plugin for Beacon",
+    "author": "",
+    "license": "MIT"
+}
