@@ -47,6 +47,7 @@ post
 -	.parent
 -	.order
 -	.commentCount
+-   .wordCount
 	
 image
 -	.id
